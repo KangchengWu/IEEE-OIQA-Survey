@@ -1,6 +1,6 @@
 # OIQA Resource Hub
 
-面向全景/全向图像质量评价（Omnidirectional Image Quality Assessment, OIQA）的论文、数据集、方法和实现资源索引。内容根据 *A Survey of Omnidirectional Image Quality Assessment: Challenges, Status, and Future Work* 整理；仓库只记录第三方资源入口，不重新分发论文、数据集或受版权保护的代码。
+面向全景图像质量评价（Omnidirectional Image Quality Assessment, OIQA）的论文、数据集、方法和实现资源索引。内容根据 *A Survey of Omnidirectional Image Quality Assessment: Challenges, Status, and Future Work* 整理；
 
 ## 目录
 
@@ -16,7 +16,7 @@
 
 ## 投影表示
 
-论文将 OIQA 的输入表示归纳为 ERP、CMP、SSP、PYM 和 viewport。它们的几何性质决定了模型需要处理的失真、采样和跨区域关系。
+本文将 OIQA 的输入表示归纳为 ERP、CMP、SSP、PYM 和 viewport。具体如下所示。
 
 | 表示 | 特点 | 常见质量建模关注点 |
 | --- | --- | --- |
@@ -34,7 +34,7 @@
 - 受试者需要在 HMD 中探索有限视口，主观实验成本高且容易产生视觉疲劳。
 - 模型需要同时处理内容失真、球面几何变形和人类观看行为。
 
-论文用 PLCC 和 SRCC 比较质量预测性能，并在不同数据库、骨干网络、失真建模方式、输入表示和计算量之间进行分析。
+论文用 PLCC 和 SRCC 比较质量预测性能，并在不同dataset、backbone、失真建模方式、输入表示和计算量之间进行分析。
 
 ## 数据集
 
@@ -63,7 +63,7 @@
 
 ## 方法
 
-方法分类沿用论文的 taxonomy。最后一列统一列出论文、公开 PDF、源码、权重或其他资源；没有确认源码的条目不会猜测仓库地址。
+方法分类沿用论文的 taxonomy。
 
 ### 传统 OIQA 方法
 
@@ -190,14 +190,7 @@
 | Recursive probability sampling | 按内容和细节概率递归采样 | 同时考虑语义和局部细节 |
 | Equatorial sampling | 在赤道固定间隔采样 | 实现简单，符合赤道观察偏置 |
 
-## 未来方向
-
-- **可迁移质量表示**：利用 2D-IQA 数据学习通用内容/失真表示，再适配 OI 的球面几何。
-- **主动观看建模**：根据已经获得的质量证据自适应选择下一个视口，并在信息足够时停止探索。
-- **空间落地的质量理解**：定位失真区域、识别失真类型和严重程度，并生成与整体分数一致的解释。
-
 ## 相关资源
-
 - 参考的通用 IQA 资源索引：<https://github.com/chaofengc/Awesome-Image-Quality-Assessment>。
 - 综述论文摘要给出的上游仓库：<https://github.com/KangchengWu/IEEE-OIQA-Survey>。
 
