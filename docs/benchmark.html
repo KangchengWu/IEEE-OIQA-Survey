@@ -1,0 +1,647 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>benchmark · OIQA</title><style>:root{color-scheme:light;--bg:#f5f7fa;--paper:#fff;--ink:#1f2328;--muted:#636c76;--line:#d1d9e0;--subtle:#f6f8fa;--link:#0969da}html.dark{color-scheme:dark;--bg:#090e15;--paper:#0d1117;--ink:#e6edf3;--muted:#9ba9ba;--line:#30363d;--subtle:#161b22;--link:#79c0ff}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.topbar{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:12px max(24px,calc((100vw - 1040px)/2));background:var(--paper);border-bottom:1px solid var(--line);font-size:13px;gap:12px}.brand{font-weight:650;letter-spacing:.5px}.topbar small{color:var(--muted)}button{background:var(--subtle);color:var(--ink);border:1px solid var(--line);padding:7px 12px;border-radius:7px;cursor:pointer}article{max-width:1040px;margin:28px auto 60px;padding:40px 48px;background:var(--paper);border:1px solid var(--line);border-radius:10px}h1,h2,h3,h4{line-height:1.35;font-weight:650}h1{font-size:29px;padding-bottom:12px;border-bottom:1px solid var(--line);margin:26px 0 14px}h2{font-size:24px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-top:40px}h3{font-size:19px;margin-top:28px}p{margin:16px 0}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}img{max-width:100%;height:auto;vertical-align:middle}sub{font-size:12px;color:var(--muted);line-height:1.7;display:inline-block;margin-top:10px}table{border-spacing:0;border-collapse:collapse;display:block;width:max-content;max-width:100%;overflow:auto;margin:18px 0 24px;font-size:14px}th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;min-width:80px}th{font-weight:650;background:var(--subtle)}tr:nth-child(2n){background:var(--subtle)}td a{overflow-wrap:anywhere}td:first-child{min-width:150px}details{margin:10px 0 16px}summary{cursor:pointer;padding:11px 0;line-height:1.5}summary:hover{color:var(--link)}details[open]{padding-bottom:12px}details>table{margin-top:8px}hr{border:0;border-top:1px solid var(--line);margin:30px 0}blockquote{margin:20px 0;padding:0 18px;color:var(--muted);border-left:4px solid var(--line)}code{background:var(--subtle);padding:2px 5px;border-radius:4px;font:85% Consolas,monospace}pre{overflow:auto;background:var(--subtle);padding:20px;border-radius:6px}pre code{background:none;padding:0}li{margin:9px 0}a[id]{display:block;scroll-margin-top:76px}@media(max-width:700px){article{margin:0;border:0;border-radius:0;padding:24px 18px}h1{font-size:24px}h2{font-size:21px}.topbar{padding:10px 18px}.topbar small{display:none}th,td{padding:8px 10px}.topbar .brand{font-size:12px}}</style></head><body><div class="topbar"><span class="brand">OIQA / RESEARCH RESOURCE HUB</span><button id="theme">Dark mode</button></div><article><h1>Quantitative Comparison and Analysis</h1>
+<p><a href="../preview.html#benchmark">← Back to the resource hub</a></p>
+<p>Values are transcribed from <strong>Table 3</strong> of the survey. The table combines results from the original papers with supplementary retraining reported in VUGA / GAQC. <strong>No models were retrained or evaluated for this resource hub.</strong> Splits and configurations can differ across sources; the table is not an independently reproduced leaderboard under a single protocol. Cross-database averages are not used as an overall ranking.</p>
+<p><strong>SRCC</strong> is Spearman&#39;s rank-order correlation coefficient; <strong>PLCC</strong> is Pearson&#39;s linear correlation coefficient. Higher values are better for both. The survey applies a four-parameter logistic mapping before computing PLCC. An em dash (—) denotes an unreported result, not zero. <strong>Fang22△</strong> removes the temporal hysteresis module.</p>
+<p>Machine-readable data: <a href="../data/benchmark.json">benchmark.json</a>.</p>
+<h2>CVIQ</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="right">SRCC ↑</th>
+<th align="right">PLCC ↑</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">S-PSNR</td>
+<td align="right">0.708</td>
+<td align="right">0.708</td>
+</tr>
+<tr>
+<td align="left">WS-PSNR</td>
+<td align="right">0.610</td>
+<td align="right">0.672</td>
+</tr>
+<tr>
+<td align="left">CPP-PSNR</td>
+<td align="right">0.626</td>
+<td align="right">0.687</td>
+</tr>
+<tr>
+<td align="left">WS-SSIM</td>
+<td align="right">0.911</td>
+<td align="right">0.929</td>
+</tr>
+<tr>
+<td align="left">MC360IQA</td>
+<td align="right">0.914</td>
+<td align="right">0.951</td>
+</tr>
+<tr>
+<td align="left">VGCN</td>
+<td align="right">0.965</td>
+<td align="right">0.963</td>
+</tr>
+<tr>
+<td align="left">Fang22△</td>
+<td align="right">0.683</td>
+<td align="right">0.710</td>
+</tr>
+<tr>
+<td align="left">Assessor360</td>
+<td align="right">0.964</td>
+<td align="right">0.977</td>
+</tr>
+<tr>
+<td align="left">OIQAND</td>
+<td align="right">0.967</td>
+<td align="right">0.976</td>
+</tr>
+<tr>
+<td align="left">MTAOIQA</td>
+<td align="right">0.962</td>
+<td align="right">0.965</td>
+</tr>
+<tr>
+<td align="left">Max360IQ</td>
+<td align="right">0.966</td>
+<td align="right">0.970</td>
+</tr>
+<tr>
+<td align="left">VU-BOIQA</td>
+<td align="right">0.963</td>
+<td align="right">0.958</td>
+</tr>
+<tr>
+<td align="left">VUGA</td>
+<td align="right">0.970</td>
+<td align="right">0.984</td>
+</tr>
+<tr>
+<td align="left">GAQC</td>
+<td align="right">0.957</td>
+<td align="right">0.959</td>
+</tr>
+</tbody></table>
+<h2>OIQA</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="right">SRCC ↑</th>
+<th align="right">PLCC ↑</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">S-PSNR</td>
+<td align="right">0.539</td>
+<td align="right">0.599</td>
+</tr>
+<tr>
+<td align="left">WS-PSNR</td>
+<td align="right">0.526</td>
+<td align="right">0.581</td>
+</tr>
+<tr>
+<td align="left">CPP-PSNR</td>
+<td align="right">0.514</td>
+<td align="right">0.568</td>
+</tr>
+<tr>
+<td align="left">WS-SSIM</td>
+<td align="right">0.503</td>
+<td align="right">0.504</td>
+</tr>
+<tr>
+<td align="left">MC360IQA</td>
+<td align="right">0.919</td>
+<td align="right">0.925</td>
+</tr>
+<tr>
+<td align="left">VGCN</td>
+<td align="right">0.958</td>
+<td align="right">0.951</td>
+</tr>
+<tr>
+<td align="left">Fang22△</td>
+<td align="right">0.747</td>
+<td align="right">0.795</td>
+</tr>
+<tr>
+<td align="left">Assessor360</td>
+<td align="right">0.980</td>
+<td align="right">0.975</td>
+</tr>
+<tr>
+<td align="left">OIQAND</td>
+<td align="right">0.937</td>
+<td align="right">0.938</td>
+</tr>
+<tr>
+<td align="left">MTAOIQA</td>
+<td align="right">0.960</td>
+<td align="right">0.972</td>
+</tr>
+<tr>
+<td align="left">Max360IQ</td>
+<td align="right">0.922</td>
+<td align="right">0.919</td>
+</tr>
+<tr>
+<td align="left">VU-BOIQA</td>
+<td align="right">0.976</td>
+<td align="right">0.973</td>
+</tr>
+<tr>
+<td align="left">VUGA</td>
+<td align="right">0.973</td>
+<td align="right">0.974</td>
+</tr>
+<tr>
+<td align="left">GAQC</td>
+<td align="right">0.983</td>
+<td align="right">0.985</td>
+</tr>
+</tbody></table>
+<h2>MVAQD</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="right">SRCC ↑</th>
+<th align="right">PLCC ↑</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">S-PSNR</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">WS-PSNR</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">CPP-PSNR</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">WS-SSIM</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">MC360IQA</td>
+<td align="right">0.382</td>
+<td align="right">0.555</td>
+</tr>
+<tr>
+<td align="left">VGCN</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">Fang22△</td>
+<td align="right">0.469</td>
+<td align="right">0.475</td>
+</tr>
+<tr>
+<td align="left">Assessor360</td>
+<td align="right">0.961</td>
+<td align="right">0.972</td>
+</tr>
+<tr>
+<td align="left">OIQAND</td>
+<td align="right">0.903</td>
+<td align="right">0.924</td>
+</tr>
+<tr>
+<td align="left">MTAOIQA</td>
+<td align="right">0.592</td>
+<td align="right">0.642</td>
+</tr>
+<tr>
+<td align="left">Max360IQ</td>
+<td align="right">0.724</td>
+<td align="right">0.769</td>
+</tr>
+<tr>
+<td align="left">VU-BOIQA</td>
+<td align="right">0.965</td>
+<td align="right">0.970</td>
+</tr>
+<tr>
+<td align="left">VUGA</td>
+<td align="right">0.966</td>
+<td align="right">0.973</td>
+</tr>
+<tr>
+<td align="left">GAQC</td>
+<td align="right">0.943</td>
+<td align="right">0.955</td>
+</tr>
+</tbody></table>
+<h2>IQA-ODI</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="right">SRCC ↑</th>
+<th align="right">PLCC ↑</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">S-PSNR</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">WS-PSNR</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">CPP-PSNR</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">WS-SSIM</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">MC360IQA</td>
+<td align="right">0.742</td>
+<td align="right">0.812</td>
+</tr>
+<tr>
+<td align="left">VGCN</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">Fang22△</td>
+<td align="right">0.310</td>
+<td align="right">0.474</td>
+</tr>
+<tr>
+<td align="left">Assessor360</td>
+<td align="right">0.957</td>
+<td align="right">0.963</td>
+</tr>
+<tr>
+<td align="left">OIQAND</td>
+<td align="right">0.927</td>
+<td align="right">0.965</td>
+</tr>
+<tr>
+<td align="left">MTAOIQA</td>
+<td align="right">0.335</td>
+<td align="right">0.528</td>
+</tr>
+<tr>
+<td align="left">Max360IQ</td>
+<td align="right">0.797</td>
+<td align="right">0.731</td>
+</tr>
+<tr>
+<td align="left">VU-BOIQA</td>
+<td align="right">0.905</td>
+<td align="right">0.934</td>
+</tr>
+<tr>
+<td align="left">VUGA</td>
+<td align="right">0.967</td>
+<td align="right">0.978</td>
+</tr>
+<tr>
+<td align="left">GAQC</td>
+<td align="right">0.894</td>
+<td align="right">0.893</td>
+</tr>
+</tbody></table>
+<h2>AIGCOIQA2024</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="right">SRCC ↑</th>
+<th align="right">PLCC ↑</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">S-PSNR</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">WS-PSNR</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">CPP-PSNR</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">WS-SSIM</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">MC360IQA</td>
+<td align="right">0.572</td>
+<td align="right">0.586</td>
+</tr>
+<tr>
+<td align="left">VGCN</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="left">Fang22△</td>
+<td align="right">0.460</td>
+<td align="right">0.457</td>
+</tr>
+<tr>
+<td align="left">Assessor360</td>
+<td align="right">0.914</td>
+<td align="right">0.912</td>
+</tr>
+<tr>
+<td align="left">OIQAND</td>
+<td align="right">0.896</td>
+<td align="right">0.895</td>
+</tr>
+<tr>
+<td align="left">MTAOIQA</td>
+<td align="right">0.456</td>
+<td align="right">0.432</td>
+</tr>
+<tr>
+<td align="left">Max360IQ</td>
+<td align="right">0.409</td>
+<td align="right">0.505</td>
+</tr>
+<tr>
+<td align="left">VU-BOIQA</td>
+<td align="right">0.888</td>
+<td align="right">0.881</td>
+</tr>
+<tr>
+<td align="left">VUGA</td>
+<td align="right">0.913</td>
+<td align="right">0.868</td>
+</tr>
+<tr>
+<td align="left">GAQC</td>
+<td align="right">0.885</td>
+<td align="right">0.877</td>
+</tr>
+</tbody></table>
+<h2>JUFE-10K</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="right">SRCC ↑</th>
+<th align="right">PLCC ↑</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">S-PSNR</td>
+<td align="right">0.285</td>
+<td align="right">0.355</td>
+</tr>
+<tr>
+<td align="left">WS-PSNR</td>
+<td align="right">0.284</td>
+<td align="right">0.353</td>
+</tr>
+<tr>
+<td align="left">CPP-PSNR</td>
+<td align="right">0.285</td>
+<td align="right">0.355</td>
+</tr>
+<tr>
+<td align="left">WS-SSIM</td>
+<td align="right">0.249</td>
+<td align="right">0.388</td>
+</tr>
+<tr>
+<td align="left">MC360IQA</td>
+<td align="right">0.620</td>
+<td align="right">0.620</td>
+</tr>
+<tr>
+<td align="left">VGCN</td>
+<td align="right">0.464</td>
+<td align="right">0.367</td>
+</tr>
+<tr>
+<td align="left">Fang22△</td>
+<td align="right">0.633</td>
+<td align="right">0.616</td>
+</tr>
+<tr>
+<td align="left">Assessor360</td>
+<td align="right">0.690</td>
+<td align="right">0.694</td>
+</tr>
+<tr>
+<td align="left">OIQAND</td>
+<td align="right">0.800</td>
+<td align="right">0.800</td>
+</tr>
+<tr>
+<td align="left">MTAOIQA</td>
+<td align="right">0.821</td>
+<td align="right">0.822</td>
+</tr>
+<tr>
+<td align="left">Max360IQ</td>
+<td align="right">0.563</td>
+<td align="right">0.491</td>
+</tr>
+<tr>
+<td align="left">VU-BOIQA</td>
+<td align="right">0.782</td>
+<td align="right">0.781</td>
+</tr>
+<tr>
+<td align="left">VUGA</td>
+<td align="right">0.846</td>
+<td align="right">0.842</td>
+</tr>
+<tr>
+<td align="left">GAQC</td>
+<td align="right">0.835</td>
+<td align="right">0.830</td>
+</tr>
+</tbody></table>
+<h2>OIQ-10K</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="right">SRCC ↑</th>
+<th align="right">PLCC ↑</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">S-PSNR</td>
+<td align="right">0.251</td>
+<td align="right">0.302</td>
+</tr>
+<tr>
+<td align="left">WS-PSNR</td>
+<td align="right">0.248</td>
+<td align="right">0.295</td>
+</tr>
+<tr>
+<td align="left">CPP-PSNR</td>
+<td align="right">0.248</td>
+<td align="right">0.295</td>
+</tr>
+<tr>
+<td align="left">WS-SSIM</td>
+<td align="right">0.062</td>
+<td align="right">0.223</td>
+</tr>
+<tr>
+<td align="left">MC360IQA</td>
+<td align="right">0.710</td>
+<td align="right">0.721</td>
+</tr>
+<tr>
+<td align="left">VGCN</td>
+<td align="right">0.698</td>
+<td align="right">0.705</td>
+</tr>
+<tr>
+<td align="left">Fang22△</td>
+<td align="right">0.758</td>
+<td align="right">0.769</td>
+</tr>
+<tr>
+<td align="left">Assessor360</td>
+<td align="right">0.773</td>
+<td align="right">0.790</td>
+</tr>
+<tr>
+<td align="left">OIQAND</td>
+<td align="right">0.740</td>
+<td align="right">0.755</td>
+</tr>
+<tr>
+<td align="left">MTAOIQA</td>
+<td align="right">0.824</td>
+<td align="right">0.829</td>
+</tr>
+<tr>
+<td align="left">Max360IQ</td>
+<td align="right">0.751</td>
+<td align="right">0.733</td>
+</tr>
+<tr>
+<td align="left">VU-BOIQA</td>
+<td align="right">0.766</td>
+<td align="right">0.749</td>
+</tr>
+<tr>
+<td align="left">VUGA</td>
+<td align="right">0.830</td>
+<td align="right">0.834</td>
+</tr>
+<tr>
+<td align="left">GAQC</td>
+<td align="right">0.842</td>
+<td align="right">0.837</td>
+</tr>
+</tbody></table>
+<h2>Computational Cost</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="right">Parameters (M)</th>
+<th align="right">FLOPs (G)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">S-PSNR</td>
+<td align="right">N/A</td>
+<td align="right">N/A</td>
+</tr>
+<tr>
+<td align="left">WS-PSNR</td>
+<td align="right">N/A</td>
+<td align="right">N/A</td>
+</tr>
+<tr>
+<td align="left">CPP-PSNR</td>
+<td align="right">N/A</td>
+<td align="right">N/A</td>
+</tr>
+<tr>
+<td align="left">WS-SSIM</td>
+<td align="right">N/A</td>
+<td align="right">N/A</td>
+</tr>
+<tr>
+<td align="left">MC360IQA</td>
+<td align="right">22.4</td>
+<td align="right">30.3</td>
+</tr>
+<tr>
+<td align="left">VGCN</td>
+<td align="right">26.5</td>
+<td align="right">191.5</td>
+</tr>
+<tr>
+<td align="left">Fang22△</td>
+<td align="right">25.2</td>
+<td align="right">174.3</td>
+</tr>
+<tr>
+<td align="left">Assessor360</td>
+<td align="right">88.2</td>
+<td align="right">230.5</td>
+</tr>
+<tr>
+<td align="left">OIQAND</td>
+<td align="right">88.0</td>
+<td align="right">124.2</td>
+</tr>
+<tr>
+<td align="left">MTAOIQA</td>
+<td align="right">93.0</td>
+<td align="right">131.4</td>
+</tr>
+<tr>
+<td align="left">Max360IQ</td>
+<td align="right">6.2</td>
+<td align="right">15.1</td>
+</tr>
+<tr>
+<td align="left">VU-BOIQA</td>
+<td align="right">30.2</td>
+<td align="right">40.8</td>
+</tr>
+<tr>
+<td align="left">VUGA</td>
+<td align="right">41.2</td>
+<td align="right">7.5</td>
+</tr>
+<tr>
+<td align="left">GAQC</td>
+<td align="right">4.7</td>
+<td align="right">1.5</td>
+</tr>
+</tbody></table>
+<p>These values follow the configurations reported in the survey. For practical efficiency comparisons, also record input resolution, viewport count, preprocessing costs, hardware, and end-to-end latency.</p>
+</article><script>document.querySelector('#theme').onclick=()=>{const dark=document.documentElement.classList.toggle('dark');document.querySelector('#theme').textContent=dark?'Light mode':'Dark mode'};</script></body></html>

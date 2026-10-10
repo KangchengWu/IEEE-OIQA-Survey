@@ -1,0 +1,995 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OIQA Resource Hub · README Preview</title><style>:root{color-scheme:light;--bg:#f5f7fa;--paper:#fff;--ink:#1f2328;--muted:#636c76;--line:#d1d9e0;--subtle:#f6f8fa;--link:#0969da}html.dark{color-scheme:dark;--bg:#090e15;--paper:#0d1117;--ink:#e6edf3;--muted:#9ba9ba;--line:#30363d;--subtle:#161b22;--link:#79c0ff}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.topbar{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:12px max(24px,calc((100vw - 1040px)/2));background:var(--paper);border-bottom:1px solid var(--line);font-size:13px;gap:12px}.brand{font-weight:650;letter-spacing:.5px}.topbar small{color:var(--muted)}button{background:var(--subtle);color:var(--ink);border:1px solid var(--line);padding:7px 12px;border-radius:7px;cursor:pointer}article{max-width:1040px;margin:28px auto 60px;padding:40px 48px;background:var(--paper);border:1px solid var(--line);border-radius:10px}h1,h2,h3,h4{line-height:1.35;font-weight:650}h1{font-size:29px;padding-bottom:12px;border-bottom:1px solid var(--line);margin:26px 0 14px}h2{font-size:24px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-top:40px}h3{font-size:19px;margin-top:28px}p{margin:16px 0}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}img{max-width:100%;height:auto;vertical-align:middle}sub{font-size:12px;color:var(--muted);line-height:1.7;display:inline-block;margin-top:10px}table{border-spacing:0;border-collapse:collapse;display:block;width:max-content;max-width:100%;overflow:auto;margin:18px 0 24px;font-size:14px}th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;min-width:80px}th{font-weight:650;background:var(--subtle)}tr:nth-child(2n){background:var(--subtle)}td a{overflow-wrap:anywhere}td:first-child{min-width:150px}details{margin:10px 0 16px}summary{cursor:pointer;padding:11px 0;line-height:1.5}summary:hover{color:var(--link)}details[open]{padding-bottom:12px}details>table{margin-top:8px}hr{border:0;border-top:1px solid var(--line);margin:30px 0}blockquote{margin:20px 0;padding:0 18px;color:var(--muted);border-left:4px solid var(--line)}code{background:var(--subtle);padding:2px 5px;border-radius:4px;font:85% Consolas,monospace}pre{overflow:auto;background:var(--subtle);padding:20px;border-radius:6px}pre code{background:none;padding:0}li{margin:9px 0}a[id]{display:block;scroll-margin-top:76px}@media(max-width:700px){article{margin:0;border:0;border-radius:0;padding:24px 18px}h1{font-size:24px}h2{font-size:21px}.topbar{padding:10px 18px}.topbar small{display:none}th,td{padding:8px 10px}.topbar .brand{font-size:12px}}</style></head><body><div class="topbar"><span class="brand">OIQA / RESEARCH RESOURCE HUB</span><small>Local README preview · GitHub rendering may differ</small><button id="theme" type="button">Dark mode</button></div><article class="markdown-body"><div align="center">
+  <img src="assets/cover.png" alt="OIQA Research Resource Hub: 18 datasets, 61 methods and components, and 14 methods compared across 7 databases" width="100%">
+  <h1>Omnidirectional Image Quality Assessment</h1>
+  <p><strong>Spherical geometry, human viewing behavior, and perceptual quality.</strong></p>
+  <p>Papers &nbsp; · &nbsp; Datasets &nbsp; · &nbsp; Implementations &nbsp; · &nbsp; Quantitative Comparisons</p>
+  <p>
+    <a href="#overview">Overview</a> &nbsp; / &nbsp;
+    <a href="#datasets">Datasets</a> &nbsp; / &nbsp;
+    <a href="#methods">Methods</a> &nbsp; / &nbsp;
+    <a href="#benchmark">Comparison</a> &nbsp; / &nbsp;
+    <a href="#citation">Citation</a>
+  </p>
+</div>
+
+<p>A companion resource index for <strong>A Survey of Omnidirectional Image Quality Assessment: Challenges, Status, and Future Work</strong>. It brings together conventional metrics, viewport-unaware and viewport-aware OIQA methods, and datasets for homogeneous, heterogeneous, and multimodal OIQA.</p>
+<p><strong>Authors:</strong> Kangcheng Wu · Jiebin Yan · Hanwei Zhu · Jingwen Hou · Yuming Fang<br><strong>Source pages checked:</strong> October 9, 2026 · <a href="docs/datasets.html">Dataset access guide</a> · <a href="docs/methods.html">Method details</a> · <a href="docs/link-audit.html">Sources and verification</a></p>
+<hr>
+<p><a id="start"></a></p>
+<h2>Start Exploring</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Research goal</th>
+<th align="left">Where to begin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Understand what distinguishes OIQA from 2D-IQA</td>
+<td align="left"><a href="#overview">Geometry and distortions</a> → <a href="#projections">Projection formats</a> → <a href="#methods">Method taxonomy</a></td>
+</tr>
+<tr>
+<td align="left">Select training and evaluation data</td>
+<td align="left"><a href="#datasets">Dataset index</a>, with access conditions, annotations, and score conventions in the details</td>
+</tr>
+<tr>
+<td align="left">Explore public implementations</td>
+<td align="left"><a href="https://github.com/TianheWu/Assessor360">Assessor360</a> · <a href="https://github.com/RJL2000/OIQAND">OIQAND</a> · <a href="https://github.com/WenJuing/IQCaption360">IQCaption360</a></td>
+</tr>
+<tr>
+<td align="left">Study viewport-unaware quality modeling</td>
+<td align="left"><a href="https://github.com/KangchengWu/OIQA">VU-BOIQA</a> · <a href="https://github.com/KangchengWu/VUGA">VUGA</a> · <a href="https://github.com/liziyi1234/GAQC">GAQC</a></td>
+</tr>
+<tr>
+<td align="left">Study viewing behavior and scanpaths</td>
+<td align="left"><a href="https://github.com/xiangjieSui/ScanDMM">ScanDMM</a> · <a href="https://github.com/xiangjieSui/GSR">GSR</a> · <a href="https://github.com/wangyuji1/RLScanIQA">RL-ScanIQA</a></td>
+</tr>
+<tr>
+<td align="left">Read the survey&#39;s quantitative comparison</td>
+<td align="left"><a href="#benchmark">Results and interpretation</a> · <a href="docs/benchmark.html">Complete results for 14 methods across 7 databases</a></td>
+</tr>
+</tbody></table>
+<p><a id="overview"></a></p>
+<h2>01 / Overview</h2>
+<p><strong>Omnidirectional images (OIs)</strong> represent visual content on a sphere. Their planar projections introduce challenges that distinguish <strong>omnidirectional image quality assessment (OIQA)</strong> from <strong>two-dimensional image quality assessment (2D-IQA)</strong>: <strong>non-uniform spatial sampling</strong>, <strong>boundary continuity</strong>, and <strong>geometric distortion</strong>. Human viewing behavior further determines which local regions and distortions contribute to perceived quality.</p>
+<p align="center">
+  <a href="assets/figures/gap.png"><img src="assets/figures/gap.png" alt="Differences between perspective images and spherical images: non-uniform spatial sampling, boundary continuity, and geometric distortion" width="720"></a><br>
+  <sub><b>Figure 1.</b> Geometric differences between perspective images and OIs. Select any figure to view its full resolution.</sub>
+</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Challenge</th>
+<th align="left">Implication for quality assessment</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>Reference image acquisition</strong></td>
+<td align="left">Capturing and stitching an OI can introduce residual degradation, complicating the definition of a pristine reference.</td>
+</tr>
+<tr>
+<td align="left"><strong>Subjective quality assessment</strong></td>
+<td align="left">Head-mounted display (HMD) experiments must account for starting points, exploration time, viewing behavior, and fatigue.</td>
+</tr>
+<tr>
+<td align="left"><strong>Objective quality assessment</strong></td>
+<td align="left">Models must account for content degradation, projection geometry, and the visual content actually explored by observers.</td>
+</tr>
+</tbody></table>
+<h3>Distortions and Perceptual Quality</h3>
+<p align="center">
+  <a href="assets/figures/distortion.png"><img src="assets/figures/distortion.png" alt="Examples of homogeneous distortion, heterogeneous distortion, and AIGC-specific distortion in omnidirectional images" width="860"></a><br>
+  <sub><b>Figure 2.</b> Homogeneous, heterogeneous, and AIGC-specific distortions motivate different quality assessment settings.</sub>
+</p>
+
+<p><a id="projections"></a></p>
+<h2>02 / Projection Formats</h2>
+<p align="center">
+  <a href="assets/figures/projection.png"><img src="assets/figures/projection.png" alt="Equirectangular projection, cubemap projection, pyramid projection, segmented spherical projection, and viewport projection" width="760"></a><br>
+  <sub><b>Figure 3.</b> Five projection formats for the same spherical scene, with different sampling densities, geometric distortions, and spatial coverage.</sub>
+</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Format</th>
+<th align="left">Geometric properties</th>
+<th align="left">Modeling considerations</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>Equirectangular projection (ERP)</strong></td>
+<td align="left">Rectangular representation with pronounced polar stretching</td>
+<td align="left">Latitude-dependent sampling, geometry-adaptive features, and global context</td>
+</tr>
+<tr>
+<td align="left"><strong>Cubemap projection (CMP)</strong></td>
+<td align="left">Six cube faces with reduced geometric distortion</td>
+<td align="left">Face boundaries and cross-face feature fusion</td>
+</tr>
+<tr>
+<td align="left"><strong>Segmented spherical projection (SSP)</strong></td>
+<td align="left">Separate equatorial and polar regions</td>
+<td align="left">Region-specific modeling and spherical coverage</td>
+</tr>
+<tr>
+<td align="left"><strong>Pyramid projection (PYM)</strong></td>
+<td align="left">Higher sampling density around a predefined viewing direction</td>
+<td align="left">Unequal detail across directions and complementary projections</td>
+</tr>
+<tr>
+<td align="left"><strong>Viewport projection</strong></td>
+<td align="left">Perspective projection of a local spherical region</td>
+<td align="left">Field of view, viewport coverage, sequential dependencies, and quality aggregation</td>
+</tr>
+</tbody></table>
+<p><a id="datasets"></a></p>
+<h2>03 / Datasets</h2>
+<p>The following groups use the task names in <strong>Table 2</strong> of the survey. Years and image counts follow that table; the <a href="docs/datasets.html">dataset access guide</a> adds distortion types, score ranges, maximum resolutions, access codes, and source-specific qualifications.</p>
+<p><strong>Access labels:</strong> <em>Author release</em> identifies downloads listed by the authors; <em>Request</em> requires a form or contact with the authors; <em>Research mirror</em> identifies a third-party research source. <em>Paper only</em> and <em>Project page</em> indicate the entry currently provided. Links were checked against source pages; complete datasets were not downloaded.</p>
+<h3>Homogeneous OIQA</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Dataset · year</th>
+<th align="right">Scale¹</th>
+<th align="left">Research focus</th>
+<th align="left">Access</th>
+<th align="left">Resources</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-1">CVIQ</a></strong> · 2018</td>
+<td align="right">16 / 528</td>
+<td align="left">Compression distortions</td>
+<td align="left">Author release</td>
+<td align="left"><a href="https://pan.baidu.com/s/1b3j5iO3jQWf2fZPAli9ozw">Download</a> · <a href="https://github.com/sunwei925/CVIQDatabase">Project</a> · <a href="https://doi.org/10.1109/mmsp.2018.8547102">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-2">OIQA</a></strong> · 2018</td>
+<td align="right">16 / 320</td>
+<td align="left">Blur, noise, and compression</td>
+<td align="left">Research mirror</td>
+<td align="left"><a href="https://mega.nz/file/FqxxRQRR#4Ju2qcmmo6Ced_7nRBXXqAaDcjqxjH2uUFnXIeyE2ts">Mirror</a> · <a href="https://github.com/xiangjieSui/GSR">Source</a> · <a href="https://doi.org/10.1109/iscas.2018.8351786">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-3">MVAQD</a></strong> · 2021</td>
+<td align="right">15 / 300</td>
+<td align="left">Multiple distortions and visual attention</td>
+<td align="left">Email request</td>
+<td align="left"><a href="https://github.com/Jianghao2019/MVAQD">Request details</a> · <a href="https://doi.org/10.1109/tip.2021.3052073">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-4">IQA-ODI</a></strong> · 2021</td>
+<td align="right">120 / 960</td>
+<td align="left">JPEG and projection distortion</td>
+<td align="left">Author release</td>
+<td align="left"><a href="https://www.dropbox.com/s/agmu8ljwal6a25e/all_ref_test_img.zip?dl=0">Download</a> · <a href="https://github.com/yanglixiaoshen/SAP-Net">Project</a> · <a href="https://doi.org/10.1109/icme51207.2021.9428390">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-5">LIVE 3D VR IQA</a></strong> · 2019</td>
+<td align="right">15 / 450</td>
+<td align="left">Stereoscopic quality and eye tracking</td>
+<td align="left">Request form</td>
+<td align="left"><a href="https://forms.gle/p7bC5P5W6C3md3wT6">Request</a> · <a href="https://live.ece.utexas.edu/research/VR3D/index.html">Project</a> · <a href="https://doi.org/10.1109/jstsp.2019.2956408">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-6">NBU-HOID</a></strong> · 2021</td>
+<td align="right">16 / 320</td>
+<td align="left">HDR and tone mapping</td>
+<td align="left">Author release</td>
+<td align="left"><a href="https://pan.baidu.com/s/1lzr7NUqhfQJb4gxyAE5cJA">Download</a> · <a href="https://github.com/caoliuyan/NBU-HOID">Project</a> · <a href="https://doi.org/10.1109/tim.2021.3093940">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-7">NBU-SOID</a></strong> · 2021</td>
+<td align="right">12 / 396</td>
+<td align="left">Stereoscopic compression distortions</td>
+<td align="left">Author release</td>
+<td align="left"><a href="https://pan.baidu.com/s/1UKjtZ6XRJ46AF9Hf7vQpOw">Download</a> · <a href="https://github.com/qyb123/NBU-SOID">Project</a> · <a href="https://doi.org/10.1109/tcsvt.2020.3043349">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-8">SOLID</a></strong> · 2018</td>
+<td align="right">6 / 276</td>
+<td align="left">Stereoscopic quality and depth perception</td>
+<td align="left">Request form</td>
+<td align="left"><a href="https://jinshuju.net/f/u3EPcv">Request</a> · <a href="https://faculty.ustc.edu.cn/chenzhibo/zh_CN/article/988216/content/2461.htm">Project</a> · <a href="https://doi.org/10.1007/978-3-030-00776-8_54">Paper</a></td>
+</tr>
+</tbody></table>
+<h3>Heterogeneous OIQA</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Dataset · year</th>
+<th align="right">Scale¹</th>
+<th align="left">Research focus</th>
+<th align="left">Access</th>
+<th align="left">Resources</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-9">ISIQA</a></strong> · 2019</td>
+<td align="right">26 / 264</td>
+<td align="left">Stitching distortion</td>
+<td align="left">Download + password request</td>
+<td align="left"><a href="http://ece.iisc.ac.in/~rajivs/databases/isiqa_release.zip">Download</a> · <a href="https://pavancm.github.io/stitched-qa/">Project</a> · <a href="https://doi.org/10.1109/tip.2019.2921858">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-10">CROSS</a></strong> · 2019</td>
+<td align="right">292 / 2044</td>
+<td align="left">Cross-reference stitching quality</td>
+<td align="left">Paper only</td>
+<td align="left"><a href="https://doi.org/10.1145/3343031.3350973">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-11">JUFE</a></strong> · 2022</td>
+<td align="right">258 / 1032</td>
+<td align="left">Viewing conditions and non-uniform distortions</td>
+<td align="left">Author release</td>
+<td align="left"><a href="https://pan.baidu.com/s/1HU3Qp8BCGdCXynYN0ZPTXQ">Download</a> · <a href="https://github.com/LXLHXL123/JUFE-VRIQA">Project</a> · <a href="https://doi.org/10.1609/aaai.v36i1.19937">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-12">OSIQA</a></strong> · 2023</td>
+<td align="right">300 / 300</td>
+<td align="left">Color, geometric, blur, and ghosting artifacts</td>
+<td align="left">Paper only</td>
+<td align="left"><a href="https://doi.org/10.1109/jstsp.2023.3250956">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-13">JUFE-10K</a></strong> · 2024</td>
+<td align="right">430 / 10320</td>
+<td align="left">Large-scale non-uniform distortions</td>
+<td align="left">Author release</td>
+<td align="left"><a href="https://pan.baidu.com/s/1eL1yee3wISC1QVn4zXnXrw">Download</a> · <a href="https://github.com/RJL2000/OIQAND">Project</a> · <a href="https://doi.org/10.1109/tmm.2025.3535372">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-14">OIQ-10K</a></strong> · 2024</td>
+<td align="right">2500 / 7500</td>
+<td align="left">Mixed distortions and quality captioning</td>
+<td align="left">Author release</td>
+<td align="left"><a href="https://pan.baidu.com/s/1Uy0AR9B2oCAIJuLCuZEtLg">Download</a> · <a href="https://github.com/WenJuing/IQCaption360">Project</a> · <a href="https://doi.org/10.1109/tip.2025.3539468">Paper</a></td>
+</tr>
+</tbody></table>
+<h3>Multimodal OIQA</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Dataset · year</th>
+<th align="right">Scale¹</th>
+<th align="left">Research focus</th>
+<th align="left">Access</th>
+<th align="left">Resources</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-15">OIQ-10K+</a></strong> · 2025</td>
+<td align="right">2500 / 7500</td>
+<td align="left">Images and quality descriptions</td>
+<td align="left">Request from authors</td>
+<td align="left"><a href="https://link.springer.com/article/10.1007/s11263-025-02626-w">Request details</a> · <a href="https://doi.org/10.1007/s11263-025-02626-w">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-16">JUFE-10K+</a></strong> · 2025</td>
+<td align="right">430 / 10320</td>
+<td align="left">Multimodal quality modeling</td>
+<td align="left">Request from authors</td>
+<td align="left"><a href="https://link.springer.com/article/10.1007/s11263-025-02626-w">Request details</a> · <a href="https://doi.org/10.1007/s11263-025-02626-w">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-17">AIGCOIQA2024</a></strong> · 2024</td>
+<td align="right">- / 300</td>
+<td align="left">AI-generated OIs and text correspondence</td>
+<td align="left">Author release</td>
+<td align="left"><a href="https://terabox.com/s/17YIkFc-PFeviUbtGP1ReYQ">Download</a> · <a href="https://github.com/IntMeGroup/AIGCOIQA">Project</a> · <a href="https://doi.org/10.1109/icip51287.2024.10647885">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><strong><a href="docs/datasets.html#dataset-18">OHF2024</a></strong> · 2025</td>
+<td align="right">- / 600</td>
+<td align="left">AIGC and distortion-aware saliency</td>
+<td align="left">Project page</td>
+<td align="left"><a href="https://github.com/ylylyl-sjtu/BLIP2OIQA-BLIP2OISal">Project</a> · <a href="https://doi.org/10.1109/tcsvt.2025.3616234">Paper</a></td>
+</tr>
+</tbody></table>
+<p><sub>¹ Scale follows the survey&#39;s reference / distorted image convention, subject to dataset-specific definitions: ISIQA&#39;s 26 denotes source scenes; OSIQA&#39;s 300 / 300 comes from 12 raw scenes; OIQ-10K&#39;s 2,500 denotes images without perceptible distortion. See the access guide before assuming paired references.</sub></p>
+<p><strong>Access instructions and annotations → <a href="docs/datasets.html">Dataset details</a></strong></p>
+<p><a id="methods"></a></p>
+<h2>04 / OIQA Methods</h2>
+<p align="center">
+  <a href="assets/figures/methods.png"><img src="assets/figures/methods.png" alt="Evolution and taxonomy of OIQA methods: conventional metrics, viewport-unaware methods, and viewport-aware methods" width="900"></a><br>
+  <sub><b>Figure 4.</b> Evolution and taxonomy of OIQA methods, following Section III of the survey.</sub>
+</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Paradigm</th>
+<th align="left">Representation and quality modeling</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>Conventional OIQA methods</strong></td>
+<td align="left">Adapt 2D-IQA metrics through spherical sampling, reprojection, or spatial weighting.</td>
+</tr>
+<tr>
+<td align="left"><strong>Viewport-unaware OIQA methods</strong></td>
+<td align="left">Process ERP patches, reprojected images, or complete ERP images without explicit viewport extraction.</td>
+</tr>
+<tr>
+<td align="left"><strong>Viewport-aware OIQA methods</strong></td>
+<td align="left">Extract or generate viewports using fixed sampling, saliency, or human viewing behavior, then aggregate their quality information.</td>
+</tr>
+</tbody></table>
+<p><strong>FR</strong> = full-reference · <strong>RR</strong> = reduced-reference · <strong>NR</strong> = no-reference · <strong>BOIQA</strong> = blind OIQA. <em>Component</em> denotes a supporting scanpath or representation model. The tables below index 61 methods and components; reference numbers refer to the survey. <strong>Code</strong> links point to the recorded implementations; third-party code is labeled explicitly.</p>
+<h3>Conventional OIQA Methods</h3>
+<details>
+<summary><strong>Conventional OIQA Methods</strong> · 7 entries</summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Method / reference</th>
+<th align="center">Type</th>
+<th align="left">Input representation</th>
+<th align="left">Resources</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="docs/methods.html#method-1">S-PSNR</a></td>
+<td align="center">FR</td>
+<td align="left">Spherical sampling</td>
+<td align="left"><a href="https://doi.org/10.1109/ismar.2015.12">Paper</a> · <a href="https://github.com/xiangjieSui/OIQA-FR-Metrics">Third-party code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-2">WS-PSNR</a></td>
+<td align="center">FR</td>
+<td align="left">ERP with spherical weighting</td>
+<td align="left"><a href="https://doi.org/10.1109/lsp.2017.2720693">Paper</a> · <a href="https://github.com/xiangjieSui/OIQA-FR-Metrics">Third-party code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-3">CPP-PSNR</a></td>
+<td align="center">FR</td>
+<td align="left">Craster parabolic projection</td>
+<td align="left"><a href="https://doi.org/10.1117/12.2235885">Paper</a> · <a href="https://github.com/xiangjieSui/OIQA-FR-Metrics">Third-party code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-4">NCP-PSNR</a></td>
+<td align="center">FR</td>
+<td align="left">Spherical sampling</td>
+<td align="left"><a href="https://doi.org/10.1109/tcsvt.2018.2886277">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-5">CP-PSNR</a></td>
+<td align="center">FR</td>
+<td align="left">Spherical sampling</td>
+<td align="left"><a href="https://doi.org/10.1109/tcsvt.2018.2886277">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-6">S-SSIM</a></td>
+<td align="center">FR</td>
+<td align="left">Spherical sampling</td>
+<td align="left"><a href="https://doi.org/10.1109/icme.2018.8486584">Paper</a> · <a href="https://github.com/xiangjieSui/OIQA-FR-Metrics">Third-party code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-7">WS-SSIM</a></td>
+<td align="center">FR</td>
+<td align="left">ERP with spherical weighting</td>
+<td align="left"><a href="https://doi.org/10.1109/icsp.2018.8652269">Paper</a></td>
+</tr>
+</tbody></table>
+</details>
+
+<h3>Viewport-unaware OIQA Methods</h3>
+<details>
+<summary><strong>OIQA Methods Based on ERP Patches</strong> · 6 entries</summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Method / reference</th>
+<th align="center">Type</th>
+<th align="left">Input representation</th>
+<th align="left">Resources</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="docs/methods.html#method-8">VR IQA NET</a></td>
+<td align="center">NR</td>
+<td align="left">ERP patches</td>
+<td align="left"><a href="https://doi.org/10.1109/icassp.2018.8461317">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-9">DeepVR-IQA</a></td>
+<td align="center">NR</td>
+<td align="left">ERP patches</td>
+<td align="left"><a href="https://doi.org/10.1109/tcsvt.2019.2898732">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-10">Sendjasni et al. [43]</a></td>
+<td align="center">NR</td>
+<td align="left">ERP patches</td>
+<td align="left"><a href="https://doi.org/10.1109/mmsp59012.2023.10337664">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-11">VU-BOIQA</a></td>
+<td align="center">NR</td>
+<td align="left">Adaptive ERP patch sequences</td>
+<td align="left"><a href="https://doi.org/10.1145/3723165">Paper</a> · <a href="https://github.com/KangchengWu/OIQA">Code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-12">IPSS</a></td>
+<td align="center">FR</td>
+<td align="left">ERP patches and patch sequences</td>
+<td align="left"><a href="https://doi.org/10.1109/tcsvt.2026.3651643">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-13">Yan et al. [44]</a></td>
+<td align="center">FR</td>
+<td align="left">ERP patches</td>
+<td align="left"><a href="https://doi.org/10.1109/lsp.2025.3569458">Paper</a></td>
+</tr>
+</tbody></table>
+</details>
+
+<details>
+<summary><strong>OIQA Methods Based on Single-Reprojection Image</strong> · 6 entries</summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Method / reference</th>
+<th align="center">Type</th>
+<th align="left">Input representation</th>
+<th align="left">Resources</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="docs/methods.html#method-14">Zheng et al. [35]</a></td>
+<td align="center">NR</td>
+<td align="left">Segmented spherical projection</td>
+<td align="left"><a href="https://doi.org/10.1109/access.2020.2972158">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-15">Jiang et al. [10]</a></td>
+<td align="center">NR</td>
+<td align="left">Cubemap</td>
+<td align="left"><a href="https://doi.org/10.1109/tip.2021.3052073">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-16">Zhou et al. [45]</a></td>
+<td align="center">NR</td>
+<td align="left">Cubemap patches</td>
+<td align="left"><a href="https://doi.org/10.1109/tbc.2022.3231101">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-17">OmiQnet</a></td>
+<td align="center">NR</td>
+<td align="left">CMP image</td>
+<td align="left"><a href="https://doi.org/10.1007/s10489-024-05421-1">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-18">Wang et al. [34]</a></td>
+<td align="center">NR</td>
+<td align="left">Cubemap</td>
+<td align="left"><a href="https://doi.org/10.1016/j.jvcir.2024.104241">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-19">Liu et al. [46]</a></td>
+<td align="center">NR</td>
+<td align="left">CMP image / frequency-domain information</td>
+<td align="left"><a href="https://doi.org/10.1016/j.patcog.2025.112882">Paper</a></td>
+</tr>
+</tbody></table>
+</details>
+
+<details>
+<summary><strong>OIQA Methods Based on Multi-Reprojection Image</strong> · 6 entries</summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Method / reference</th>
+<th align="center">Type</th>
+<th align="left">Input representation</th>
+<th align="left">Resources</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="docs/methods.html#method-20">Jiang et al. [47]</a></td>
+<td align="center">NR</td>
+<td align="left">Multiple projection angles</td>
+<td align="left"><a href="https://doi.org/10.1109/tcsvt.2021.3128014">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-21">MFAN</a></td>
+<td align="center">NR / FR</td>
+<td align="left">Multiple projection formats</td>
+<td align="left"><a href="https://doi.org/10.1109/lsp.2023.3310888">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-22">Xiao et al. [48]</a></td>
+<td align="center">NR</td>
+<td align="left">ERP and CMP</td>
+<td align="left"><a href="https://doi.org/10.1016/j.displa.2025.103173">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-23">Hu et al. [49]</a></td>
+<td align="center">NR</td>
+<td align="left">ERP and alternative projections</td>
+<td align="left"><a href="https://www.semanticscholar.org/search?q=Cross-projection+distilling+knowledge+for+omnidirectional+image+quality+assessment">Title search</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-24">Ma et al. [50]</a></td>
+<td align="center">NR</td>
+<td align="left">ERP and CMP</td>
+<td align="left"><a href="https://doi.org/10.1109/tbc.2024.3503435">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-25">Wan et al. [51]</a></td>
+<td align="center">FR</td>
+<td align="left">ERP and CMP</td>
+<td align="left"><a href="https://www.semanticscholar.org/search?q=Panoramic+image+quality+evaluation+based+on+visual+perception+mechanism">Title search</a></td>
+</tr>
+</tbody></table>
+</details>
+
+<details>
+<summary><strong>OIQA Methods Based on Raw ERP Image</strong> · 4 entries</summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Method / reference</th>
+<th align="center">Type</th>
+<th align="left">Input representation</th>
+<th align="left">Resources</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="docs/methods.html#method-26">SAP-Net</a></td>
+<td align="center">NR</td>
+<td align="left">Raw ERP image</td>
+<td align="left"><a href="https://doi.org/10.1109/icme51207.2021.9428390">Paper</a> · <a href="https://github.com/yanglixiaoshen/SAP-Net">Code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-27">Chen et al. [52]</a></td>
+<td align="center">NR</td>
+<td align="left">Raw ERP image</td>
+<td align="left"><a href="https://doi.org/10.1145/3573942.3574074">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-28">VUGA</a></td>
+<td align="center">NR</td>
+<td align="left">Raw ERP image</td>
+<td align="left"><a href="https://doi.org/10.1109/tmm.2026.3673590">Paper</a> · <a href="https://github.com/KangchengWu/VUGA">Code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-29">GAQC</a></td>
+<td align="center">NR</td>
+<td align="left">Raw ERP image</td>
+<td align="left"><a href="https://doi.org/10.1109/tcsvt.2026.3694394">Paper</a> · <a href="https://github.com/liziyi1234/GAQC">Code</a></td>
+</tr>
+</tbody></table>
+</details>
+
+<h3>Viewport-aware OIQA Methods</h3>
+<details>
+<summary><strong>OIQA Methods With Fixed Viewport Sampling</strong> · 10 entries</summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Method / reference</th>
+<th align="center">Type</th>
+<th align="left">Input representation</th>
+<th align="left">Resources</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="docs/methods.html#method-30">MC360IQA</a></td>
+<td align="center">NR</td>
+<td align="left">Six fixed viewports</td>
+<td align="left"><a href="https://doi.org/10.1109/jstsp.2019.2955024">Paper</a> · <a href="https://github.com/sunwei925/MC360IQA">Code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-31">Zhou et al. [65]</a></td>
+<td align="center">NR</td>
+<td align="left">CMP face groups with different projection orientations</td>
+<td align="left"><a href="https://doi.org/10.1109/tcsvt.2021.3081162">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-32">Liu et al. [66]</a></td>
+<td align="center">NR</td>
+<td align="left">Directional viewports</td>
+<td align="left"><a href="https://doi.org/10.14569/ijacsa.2023.01409112">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-33">Feng et al. [67]</a></td>
+<td align="center">NR</td>
+<td align="left">Uniform spherical viewports</td>
+<td align="left"><a href="https://www.semanticscholar.org/search?q=Omnidirectional+image+quality+assessment+based+on+adaptive+multi-viewport+fusion">Title search</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-34">Zhou et al. [68]</a></td>
+<td align="center">NR</td>
+<td align="left">Equatorial viewports and ERP</td>
+<td align="left"><a href="https://doi.org/10.1109/tcsvt.2021.3081182">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-35">Liu et al. [69]</a></td>
+<td align="center">NR</td>
+<td align="left">Sampled viewports</td>
+<td align="left"><a href="https://doi.org/10.1016/j.jvcir.2023.103770">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-36">S²</a></td>
+<td align="center">NR</td>
+<td align="left">Non-uniform viewports plus global ERP</td>
+<td align="left"><a href="https://doi.org/10.1109/icip49359.2023.10222049">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-37">OIQAND</a></td>
+<td align="center">NR</td>
+<td align="left">Equatorial viewports</td>
+<td align="left"><a href="https://doi.org/10.1109/tmm.2025.3535372">Paper</a> · <a href="https://github.com/RJL2000/OIQAND">Code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-38">MTAOIQA</a></td>
+<td align="center">NR</td>
+<td align="left">Equatorial viewports</td>
+<td align="left"><a href="https://doi.org/10.1109/tcsvt.2024.3497994">Paper</a> · <a href="https://github.com/RJL2000/MTAOIQA">Code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-39">IQCaption360</a></td>
+<td align="center">NR</td>
+<td align="left">Equatorial viewports and ERP</td>
+<td align="left"><a href="https://doi.org/10.1109/tip.2025.3539468">Paper</a> · <a href="https://github.com/WenJuing/IQCaption360">Code</a></td>
+</tr>
+</tbody></table>
+</details>
+
+<details>
+<summary><strong>OIQA Methods with Saliency-based Viewport Sampling</strong> · 4 entries</summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Method / reference</th>
+<th align="center">Type</th>
+<th align="left">Input representation</th>
+<th align="left">Resources</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="docs/methods.html#method-41">VGCN</a></td>
+<td align="center">NR</td>
+<td align="left">Saliency-selected viewports</td>
+<td align="left"><a href="https://doi.org/10.1109/tcsvt.2020.3015186">Paper</a> · <a href="https://github.com/weizhou-geek/VGCN-PyTorch">Code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-42">AHGCN</a></td>
+<td align="center">NR</td>
+<td align="left">Saliency-selected viewports</td>
+<td align="left"><a href="https://doi.org/10.1145/3503161.3548337">Paper</a> · <a href="https://github.com/JunFu1995/AHGCN">Code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-43">Nandhini et al. [74]</a></td>
+<td align="center">NR</td>
+<td align="left">Attention-selected viewports</td>
+<td align="left"><a href="https://doi.org/10.1007/s11042-024-19457-5">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-44">ST360IQ</a></td>
+<td align="center">NR</td>
+<td align="left">Saliency-selected tangent viewports</td>
+<td align="left"><a href="https://doi.org/10.1109/icassp49357.2023.10096750">Paper</a> · <a href="https://github.com/Nafiseh-Tofighi/ST360IQ">Code</a></td>
+</tr>
+</tbody></table>
+</details>
+
+<details>
+<summary><strong>OIQA Methods with Human Viewing Behavior Modeling</strong> · 15 entries</summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Method / reference</th>
+<th align="center">Type</th>
+<th align="left">Input representation</th>
+<th align="left">Resources</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="docs/methods.html#method-40">Fang22</a></td>
+<td align="center">NR</td>
+<td align="left">Viewports with viewing priors</td>
+<td align="left"><a href="https://doi.org/10.1609/aaai.v36i1.19937">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-45">Sui et al. [76]</a></td>
+<td align="center">NR</td>
+<td align="left">Scanpath-derived video frames</td>
+<td align="left"><a href="https://doi.org/10.1109/tvcg.2021.3050888">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-46">Liu et al. [13]</a></td>
+<td align="center">NR</td>
+<td align="left">Conditioned viewport sequences</td>
+<td align="left"><a href="https://doi.org/10.1145/3640344">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-47">Max360IQ</a></td>
+<td align="center">NR</td>
+<td align="left">Recorded scanpath viewports</td>
+<td align="left"><a href="https://doi.org/10.1016/j.patcog.2025.111429">Paper</a> · <a href="https://github.com/WenJuing/Max360IQ">Code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-48">Zhang et al. [78]</a></td>
+<td align="center">NR</td>
+<td align="left">Pseudo-browsing viewport sequences</td>
+<td align="left"><a href="https://doi.org/10.1145/3503161.3548175">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-49">Zhang et al. [79]</a></td>
+<td align="center">NR</td>
+<td align="left">Pseudo-temporal viewport sequences</td>
+<td align="left"><a href="https://doi.org/10.1016/j.displa.2025.103302">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-50">Sendjasni et al. [80]</a></td>
+<td align="center">NR</td>
+<td align="left">Predicted scanpath viewports</td>
+<td align="left"><a href="https://doi.org/10.1109/icip42928.2021.9506044">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-51">PW-360IQA</a></td>
+<td align="center">NR</td>
+<td align="left">Perceptual scanpath viewports</td>
+<td align="left"><a href="https://doi.org/10.3390/s23094242">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-52">Wang et al. [83]</a></td>
+<td align="center">NR</td>
+<td align="left">Predicted scanpath viewports</td>
+<td align="left"><a href="https://doi.org/10.3389/fnins.2022.1022041">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-53">ESPOIQA</a></td>
+<td align="center">NR</td>
+<td align="left">Fixation-density viewports</td>
+<td align="left"><a href="https://doi.org/10.1109/tim.2024.3470239">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-54">GSR</a></td>
+<td align="center">NR</td>
+<td align="left">Gaze-centered tangent patches</td>
+<td align="left"><a href="https://doi.org/10.1109/TIP.2025.3583181">Paper</a> · <a href="https://github.com/xiangjieSui/GSR">Code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-55">Wang et al. [18]</a></td>
+<td align="center">NR</td>
+<td align="left">Scanpath viewports</td>
+<td align="left"><a href="https://doi.org/10.1109/tim.2025.3571161">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-56">Li et al. [87]</a></td>
+<td align="center">NR</td>
+<td align="left">Viewport graph random walks</td>
+<td align="left"><a href="https://doi.org/10.1109/icsip65915.2025.11171466">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-57">RL-ScanIQA</a></td>
+<td align="center">NR</td>
+<td align="left">Reinforcement-learned scanpaths</td>
+<td align="left"><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Wang_RL-ScanIQA_Reinforcement-Learned_Scanpaths_for_Blind_360deg_Image_Quality_Assessment_CVPR_2026_paper.html">Paper</a> · <a href="https://github.com/wangyuji1/RLScanIQA">Code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-58">Assessor360</a></td>
+<td align="center">NR</td>
+<td align="left">Pseudo-viewport sequences</td>
+<td align="left"><a href="https://doi.org/10.48550/arxiv.2305.10983">Paper</a> · <a href="https://github.com/TianheWu/Assessor360">Code</a></td>
+</tr>
+</tbody></table>
+</details>
+
+<h3>Supporting Components</h3>
+<details>
+<summary><strong>Supporting Components</strong> · 3 entries</summary>
+
+<table>
+<thead>
+<tr>
+<th align="left">Method / reference</th>
+<th align="center">Type</th>
+<th align="left">Input representation</th>
+<th align="left">Resources</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="docs/methods.html#method-59">ScanDMM</a></td>
+<td align="center">Component</td>
+<td align="left">360-degree scanpaths</td>
+<td align="left"><a href="https://doi.org/10.1109/cvpr52729.2023.00675">Paper</a> · <a href="https://github.com/xiangjieSui/ScanDMM">Code</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-60">Sun et al. [81]</a></td>
+<td align="center">Component</td>
+<td align="left">Scanpaths</td>
+<td align="left"><a href="https://doi.org/10.1109/tpami.2019.2956930">Paper</a></td>
+</tr>
+<tr>
+<td align="left"><a href="docs/methods.html#method-61">X-CLIP</a></td>
+<td align="center">Component</td>
+<td align="left">Video-text tokens</td>
+<td align="left"><a href="https://doi.org/10.1145/3503161.3547910">Paper</a> · <a href="https://github.com/xuguohai/X-CLIP">Code</a></td>
+</tr>
+</tbody></table>
+</details>
+
+<p><strong>Full paper titles, modeling details, and model weights → <a href="docs/methods.html">Method details</a></strong></p>
+<h3>Viewport Selection and Sequence Generation</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Strategy</th>
+<th align="left">Mechanism</th>
+<th align="left">Example</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Fixed viewport sampling</td>
+<td align="left">Extract viewports at predefined spherical locations</td>
+<td align="left"><a href="https://github.com/sunwei925/MC360IQA">MC360IQA</a></td>
+</tr>
+<tr>
+<td align="left">Equatorial sampling</td>
+<td align="left">Sample at fixed intervals along the equator, incorporating human viewing priors</td>
+<td align="left"><a href="https://github.com/RJL2000/OIQAND">OIQAND</a></td>
+</tr>
+<tr>
+<td align="left">Saliency-based viewport sampling</td>
+<td align="left">Select local regions using visual saliency or attention</td>
+<td align="left"><a href="https://github.com/weizhou-geek/VGCN-PyTorch">VGCN</a> · <a href="https://github.com/Nafiseh-Tofighi/ST360IQ">ST360IQ</a></td>
+</tr>
+<tr>
+<td align="left">Recursive probability sampling</td>
+<td align="left">Generate multiple pseudo-viewport sequences</td>
+<td align="left"><a href="https://github.com/TianheWu/Assessor360">Assessor360</a></td>
+</tr>
+<tr>
+<td align="left">Scanpath prediction</td>
+<td align="left">Generate successive viewing locations to guide local feature extraction</td>
+<td align="left"><a href="https://github.com/xiangjieSui/ScanDMM">ScanDMM</a> · <a href="https://github.com/xiangjieSui/GSR">GSR</a></td>
+</tr>
+<tr>
+<td align="left">Reinforcement-learned exploration</td>
+<td align="left">Jointly learn viewport exploration and quality assessment</td>
+<td align="left"><a href="https://github.com/wangyuji1/RLScanIQA">RL-ScanIQA</a></td>
+</tr>
+</tbody></table>
+<p><a id="benchmark"></a></p>
+<h2>05 / Quantitative Comparison and Analysis</h2>
+<p><strong>Table 3</strong> of the survey compares <strong>14 methods across 7 databases</strong>. The excerpt below highlights three representative databases and computational cost. <a href="docs/benchmark.html">Complete results</a> report both <strong>Spearman&#39;s rank-order correlation coefficient (SRCC)</strong> and <strong>Pearson&#39;s linear correlation coefficient (PLCC)</strong>.</p>
+<p>The survey combines published results with supplementary retraining results. <strong>These experiments have not been rerun for this repository.</strong> Splits and configurations may differ across sources, so the comparison supports analysis of trends rather than a single ranking under a unified evaluation protocol.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="right">AIGCOIQA2024 SRCC ↑</th>
+<th align="right">JUFE-10K SRCC ↑</th>
+<th align="right">OIQ-10K SRCC ↑</th>
+<th align="right">Params / FLOPs</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Assessor360</td>
+<td align="right">0.914</td>
+<td align="right">0.690</td>
+<td align="right">0.773</td>
+<td align="right">88.2 M / 230.5 G</td>
+</tr>
+<tr>
+<td align="left">OIQAND</td>
+<td align="right">0.896</td>
+<td align="right">0.800</td>
+<td align="right">0.740</td>
+<td align="right">88.0 M / 124.2 G</td>
+</tr>
+<tr>
+<td align="left">MTAOIQA</td>
+<td align="right">0.456</td>
+<td align="right">0.821</td>
+<td align="right">0.824</td>
+<td align="right">93.0 M / 131.4 G</td>
+</tr>
+<tr>
+<td align="left">Max360IQ</td>
+<td align="right">0.409</td>
+<td align="right">0.563</td>
+<td align="right">0.751</td>
+<td align="right">6.2 M / 15.1 G</td>
+</tr>
+<tr>
+<td align="left">VU-BOIQA</td>
+<td align="right">0.888</td>
+<td align="right">0.782</td>
+<td align="right">0.766</td>
+<td align="right">30.2 M / 40.8 G</td>
+</tr>
+<tr>
+<td align="left">VUGA</td>
+<td align="right">0.913</td>
+<td align="right">0.846</td>
+<td align="right">0.830</td>
+<td align="right">41.2 M / 7.5 G</td>
+</tr>
+<tr>
+<td align="left">GAQC</td>
+<td align="right">0.885</td>
+<td align="right">0.835</td>
+<td align="right">0.842</td>
+<td align="right">4.7 M / 1.5 G</td>
+</tr>
+</tbody></table>
+<h3>Reproducibility Considerations</h3>
+<ol>
+<li><strong>Split by source content.</strong> Keep an OI and its distorted versions or viewports within the same partition to avoid data leakage.</li>
+<li><strong>Check score direction.</strong> For example, higher IQA-ODI DMOS indicates poorer quality; the label name alone is insufficient.</li>
+<li><strong>Record the input configuration.</strong> Include projection format, resolution, field of view, viewport count, starting point, and exploration time.</li>
+<li><strong>Specify the evaluation protocol.</strong> Report SRCC, PLCC, random seeds, and statistics across splits. Document the nonlinear mapping used before PLCC; the survey uses a four-parameter logistic function.</li>
+<li><strong>Account for the complete pipeline.</strong> State whether FLOPs include reprojection, viewport extraction, and scanpath generation. Report hardware and end-to-end latency alongside model complexity.</li>
+</ol>
+<p><a id="future"></a></p>
+<h2>06 / Future Work</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Direction</th>
+<th align="left">Research question</th>
+<th align="left">Experimental opportunities</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>Transferable quality representation learning</strong></td>
+<td align="left">How can general content and distortion representations from 2D-IQA adapt to OI-specific geometry?</td>
+<td align="left">2D-IQA pretraining, cross-database transfer, and cross-distortion generalization</td>
+</tr>
+<tr>
+<td align="left"><strong>Active viewing behavior modeling</strong></td>
+<td align="left">Can a model select the next viewport using accumulated quality evidence and stop when sufficient information is available?</td>
+<td align="left">Adaptive exploration, different viewing budgets, and quality–efficiency trade-offs</td>
+</tr>
+<tr>
+<td align="left"><strong>Spatially grounded quality understanding</strong></td>
+<td align="left">Can quality scores be supported by localized distortions and consistent textual explanations?</td>
+<td align="left">Region-level evidence, distortion type and severity, and explanation–score consistency</td>
+</tr>
+</tbody></table>
+<p><a id="maintenance"></a></p>
+<h2>07 / Maintenance and Contributions</h2>
+<p>Contributions can add author repositories, dataset access pages, model weights, or corrections. Include the <strong>resource name, original paper, authoritative source, and access conditions</strong>. Identify third-party implementations and mirrors. See <a href="CONTRIBUTING.html">CONTRIBUTING.md</a>.</p>
+<p>Terminology, category headings, and reference numbers follow the supplied survey manuscript. Publication-year or representation differences are documented in the details. See <a href="docs/link-audit.html">Sources and verification</a> for the scope of resource checks.</p>
+<p>Related resources: <a href="https://github.com/chaofengc/Awesome-Image-Quality-Assessment">Awesome Image Quality Assessment</a> · <a href="https://github.com/xiangjieSui/OIQA-FR-Metrics">OIQA-FR-Metrics</a> · <a href="https://github.com/LXLHXL123/OpenVRQoE">OpenVRQoE</a></p>
+<p><a id="citation"></a></p>
+<h2>Citation and Acknowledgments</h2>
+<blockquote>
+<p>Kangcheng Wu, Jiebin Yan, Hanwei Zhu, Jingwen Hou, and Yuming Fang. <strong>A Survey of Omnidirectional Image Quality Assessment: Challenges, Status, and Future Work.</strong></p>
+</blockquote>
+<p>Survey repository: <a href="https://github.com/KangchengWu/IEEE-OIQA-Survey">KangchengWu/IEEE-OIQA-Survey</a>. Please also cite the original papers when using their datasets, implementations, or experimental results.</p>
+<details>
+<summary>BibTeX · Survey manuscript</summary>
+
+<pre><code class="language-bibtex">@misc{wu_oiqa_survey,
+  title = {A Survey of Omnidirectional Image Quality Assessment:
+           Challenges, Status, and Future Work},
+  author = {Wu, Kangcheng and Yan, Jiebin and Zhu, Hanwei
+            and Hou, Jingwen and Fang, Yuming},
+  howpublished = {Survey manuscript},
+  url = {https://github.com/KangchengWu/IEEE-OIQA-Survey}
+}
+</code></pre>
+<p>This entry uses the information available in the supplied manuscript. Use the publisher&#39;s citation record when final publication metadata becomes available.</p>
+</details>
+
+<p>The four research figures are from the survey. Rights and usage conditions for linked papers, datasets, and implementations remain with their respective owners. See <a href="assets/ATTRIBUTION.html">Asset attribution</a>.</p>
+<p align="center"><a href="#start">Back to navigation ↑</a></p>
+</article><script>document.querySelector('#theme').onclick=()=>{const dark=document.documentElement.classList.toggle('dark');document.querySelector('#theme').textContent=dark?'Light mode':'Dark mode'};</script></body></html>

@@ -1,0 +1,982 @@
+[
+  {
+    "method": "S-PSNR",
+    "dataset": "CVIQ",
+    "srcc": 0.708,
+    "plcc": 0.708,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "S-PSNR",
+    "dataset": "OIQA",
+    "srcc": 0.539,
+    "plcc": 0.599,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "S-PSNR",
+    "dataset": "MVAQD",
+    "srcc": null,
+    "plcc": null,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "S-PSNR",
+    "dataset": "IQA-ODI",
+    "srcc": null,
+    "plcc": null,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "S-PSNR",
+    "dataset": "AIGCOIQA2024",
+    "srcc": null,
+    "plcc": null,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "S-PSNR",
+    "dataset": "JUFE-10K",
+    "srcc": 0.285,
+    "plcc": 0.355,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "S-PSNR",
+    "dataset": "OIQ-10K",
+    "srcc": 0.251,
+    "plcc": 0.302,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "WS-PSNR",
+    "dataset": "CVIQ",
+    "srcc": 0.61,
+    "plcc": 0.672,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "WS-PSNR",
+    "dataset": "OIQA",
+    "srcc": 0.526,
+    "plcc": 0.581,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "WS-PSNR",
+    "dataset": "MVAQD",
+    "srcc": null,
+    "plcc": null,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "WS-PSNR",
+    "dataset": "IQA-ODI",
+    "srcc": null,
+    "plcc": null,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "WS-PSNR",
+    "dataset": "AIGCOIQA2024",
+    "srcc": null,
+    "plcc": null,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "WS-PSNR",
+    "dataset": "JUFE-10K",
+    "srcc": 0.284,
+    "plcc": 0.353,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "WS-PSNR",
+    "dataset": "OIQ-10K",
+    "srcc": 0.248,
+    "plcc": 0.295,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "CPP-PSNR",
+    "dataset": "CVIQ",
+    "srcc": 0.626,
+    "plcc": 0.687,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "CPP-PSNR",
+    "dataset": "OIQA",
+    "srcc": 0.514,
+    "plcc": 0.568,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "CPP-PSNR",
+    "dataset": "MVAQD",
+    "srcc": null,
+    "plcc": null,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "CPP-PSNR",
+    "dataset": "IQA-ODI",
+    "srcc": null,
+    "plcc": null,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "CPP-PSNR",
+    "dataset": "AIGCOIQA2024",
+    "srcc": null,
+    "plcc": null,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "CPP-PSNR",
+    "dataset": "JUFE-10K",
+    "srcc": 0.285,
+    "plcc": 0.355,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "CPP-PSNR",
+    "dataset": "OIQ-10K",
+    "srcc": 0.248,
+    "plcc": 0.295,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "WS-SSIM",
+    "dataset": "CVIQ",
+    "srcc": 0.911,
+    "plcc": 0.929,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "WS-SSIM",
+    "dataset": "OIQA",
+    "srcc": 0.503,
+    "plcc": 0.504,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "WS-SSIM",
+    "dataset": "MVAQD",
+    "srcc": null,
+    "plcc": null,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "WS-SSIM",
+    "dataset": "IQA-ODI",
+    "srcc": null,
+    "plcc": null,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "WS-SSIM",
+    "dataset": "AIGCOIQA2024",
+    "srcc": null,
+    "plcc": null,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "WS-SSIM",
+    "dataset": "JUFE-10K",
+    "srcc": 0.249,
+    "plcc": 0.388,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "WS-SSIM",
+    "dataset": "OIQ-10K",
+    "srcc": 0.062,
+    "plcc": 0.223,
+    "params_m": null,
+    "flops_g": null,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "MC360IQA",
+    "dataset": "CVIQ",
+    "srcc": 0.914,
+    "plcc": 0.951,
+    "params_m": 22.4,
+    "flops_g": 30.3,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "MC360IQA",
+    "dataset": "OIQA",
+    "srcc": 0.919,
+    "plcc": 0.925,
+    "params_m": 22.4,
+    "flops_g": 30.3,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "MC360IQA",
+    "dataset": "MVAQD",
+    "srcc": 0.382,
+    "plcc": 0.555,
+    "params_m": 22.4,
+    "flops_g": 30.3,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "MC360IQA",
+    "dataset": "IQA-ODI",
+    "srcc": 0.742,
+    "plcc": 0.812,
+    "params_m": 22.4,
+    "flops_g": 30.3,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "MC360IQA",
+    "dataset": "AIGCOIQA2024",
+    "srcc": 0.572,
+    "plcc": 0.586,
+    "params_m": 22.4,
+    "flops_g": 30.3,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "MC360IQA",
+    "dataset": "JUFE-10K",
+    "srcc": 0.62,
+    "plcc": 0.62,
+    "params_m": 22.4,
+    "flops_g": 30.3,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "MC360IQA",
+    "dataset": "OIQ-10K",
+    "srcc": 0.71,
+    "plcc": 0.721,
+    "params_m": 22.4,
+    "flops_g": 30.3,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VGCN",
+    "dataset": "CVIQ",
+    "srcc": 0.965,
+    "plcc": 0.963,
+    "params_m": 26.5,
+    "flops_g": 191.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VGCN",
+    "dataset": "OIQA",
+    "srcc": 0.958,
+    "plcc": 0.951,
+    "params_m": 26.5,
+    "flops_g": 191.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VGCN",
+    "dataset": "MVAQD",
+    "srcc": null,
+    "plcc": null,
+    "params_m": 26.5,
+    "flops_g": 191.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VGCN",
+    "dataset": "IQA-ODI",
+    "srcc": null,
+    "plcc": null,
+    "params_m": 26.5,
+    "flops_g": 191.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VGCN",
+    "dataset": "AIGCOIQA2024",
+    "srcc": null,
+    "plcc": null,
+    "params_m": 26.5,
+    "flops_g": 191.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VGCN",
+    "dataset": "JUFE-10K",
+    "srcc": 0.464,
+    "plcc": 0.367,
+    "params_m": 26.5,
+    "flops_g": 191.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VGCN",
+    "dataset": "OIQ-10K",
+    "srcc": 0.698,
+    "plcc": 0.705,
+    "params_m": 26.5,
+    "flops_g": 191.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Fang22△",
+    "dataset": "CVIQ",
+    "srcc": 0.683,
+    "plcc": 0.71,
+    "params_m": 25.2,
+    "flops_g": 174.3,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Fang22△",
+    "dataset": "OIQA",
+    "srcc": 0.747,
+    "plcc": 0.795,
+    "params_m": 25.2,
+    "flops_g": 174.3,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Fang22△",
+    "dataset": "MVAQD",
+    "srcc": 0.469,
+    "plcc": 0.475,
+    "params_m": 25.2,
+    "flops_g": 174.3,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Fang22△",
+    "dataset": "IQA-ODI",
+    "srcc": 0.31,
+    "plcc": 0.474,
+    "params_m": 25.2,
+    "flops_g": 174.3,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Fang22△",
+    "dataset": "AIGCOIQA2024",
+    "srcc": 0.46,
+    "plcc": 0.457,
+    "params_m": 25.2,
+    "flops_g": 174.3,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Fang22△",
+    "dataset": "JUFE-10K",
+    "srcc": 0.633,
+    "plcc": 0.616,
+    "params_m": 25.2,
+    "flops_g": 174.3,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Fang22△",
+    "dataset": "OIQ-10K",
+    "srcc": 0.758,
+    "plcc": 0.769,
+    "params_m": 25.2,
+    "flops_g": 174.3,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Assessor360",
+    "dataset": "CVIQ",
+    "srcc": 0.964,
+    "plcc": 0.977,
+    "params_m": 88.2,
+    "flops_g": 230.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Assessor360",
+    "dataset": "OIQA",
+    "srcc": 0.98,
+    "plcc": 0.975,
+    "params_m": 88.2,
+    "flops_g": 230.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Assessor360",
+    "dataset": "MVAQD",
+    "srcc": 0.961,
+    "plcc": 0.972,
+    "params_m": 88.2,
+    "flops_g": 230.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Assessor360",
+    "dataset": "IQA-ODI",
+    "srcc": 0.957,
+    "plcc": 0.963,
+    "params_m": 88.2,
+    "flops_g": 230.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Assessor360",
+    "dataset": "AIGCOIQA2024",
+    "srcc": 0.914,
+    "plcc": 0.912,
+    "params_m": 88.2,
+    "flops_g": 230.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Assessor360",
+    "dataset": "JUFE-10K",
+    "srcc": 0.69,
+    "plcc": 0.694,
+    "params_m": 88.2,
+    "flops_g": 230.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Assessor360",
+    "dataset": "OIQ-10K",
+    "srcc": 0.773,
+    "plcc": 0.79,
+    "params_m": 88.2,
+    "flops_g": 230.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "OIQAND",
+    "dataset": "CVIQ",
+    "srcc": 0.967,
+    "plcc": 0.976,
+    "params_m": 88.0,
+    "flops_g": 124.2,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "OIQAND",
+    "dataset": "OIQA",
+    "srcc": 0.937,
+    "plcc": 0.938,
+    "params_m": 88.0,
+    "flops_g": 124.2,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "OIQAND",
+    "dataset": "MVAQD",
+    "srcc": 0.903,
+    "plcc": 0.924,
+    "params_m": 88.0,
+    "flops_g": 124.2,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "OIQAND",
+    "dataset": "IQA-ODI",
+    "srcc": 0.927,
+    "plcc": 0.965,
+    "params_m": 88.0,
+    "flops_g": 124.2,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "OIQAND",
+    "dataset": "AIGCOIQA2024",
+    "srcc": 0.896,
+    "plcc": 0.895,
+    "params_m": 88.0,
+    "flops_g": 124.2,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "OIQAND",
+    "dataset": "JUFE-10K",
+    "srcc": 0.8,
+    "plcc": 0.8,
+    "params_m": 88.0,
+    "flops_g": 124.2,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "OIQAND",
+    "dataset": "OIQ-10K",
+    "srcc": 0.74,
+    "plcc": 0.755,
+    "params_m": 88.0,
+    "flops_g": 124.2,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "MTAOIQA",
+    "dataset": "CVIQ",
+    "srcc": 0.962,
+    "plcc": 0.965,
+    "params_m": 93.0,
+    "flops_g": 131.4,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "MTAOIQA",
+    "dataset": "OIQA",
+    "srcc": 0.96,
+    "plcc": 0.972,
+    "params_m": 93.0,
+    "flops_g": 131.4,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "MTAOIQA",
+    "dataset": "MVAQD",
+    "srcc": 0.592,
+    "plcc": 0.642,
+    "params_m": 93.0,
+    "flops_g": 131.4,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "MTAOIQA",
+    "dataset": "IQA-ODI",
+    "srcc": 0.335,
+    "plcc": 0.528,
+    "params_m": 93.0,
+    "flops_g": 131.4,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "MTAOIQA",
+    "dataset": "AIGCOIQA2024",
+    "srcc": 0.456,
+    "plcc": 0.432,
+    "params_m": 93.0,
+    "flops_g": 131.4,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "MTAOIQA",
+    "dataset": "JUFE-10K",
+    "srcc": 0.821,
+    "plcc": 0.822,
+    "params_m": 93.0,
+    "flops_g": 131.4,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "MTAOIQA",
+    "dataset": "OIQ-10K",
+    "srcc": 0.824,
+    "plcc": 0.829,
+    "params_m": 93.0,
+    "flops_g": 131.4,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Max360IQ",
+    "dataset": "CVIQ",
+    "srcc": 0.966,
+    "plcc": 0.97,
+    "params_m": 6.2,
+    "flops_g": 15.1,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Max360IQ",
+    "dataset": "OIQA",
+    "srcc": 0.922,
+    "plcc": 0.919,
+    "params_m": 6.2,
+    "flops_g": 15.1,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Max360IQ",
+    "dataset": "MVAQD",
+    "srcc": 0.724,
+    "plcc": 0.769,
+    "params_m": 6.2,
+    "flops_g": 15.1,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Max360IQ",
+    "dataset": "IQA-ODI",
+    "srcc": 0.797,
+    "plcc": 0.731,
+    "params_m": 6.2,
+    "flops_g": 15.1,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Max360IQ",
+    "dataset": "AIGCOIQA2024",
+    "srcc": 0.409,
+    "plcc": 0.505,
+    "params_m": 6.2,
+    "flops_g": 15.1,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Max360IQ",
+    "dataset": "JUFE-10K",
+    "srcc": 0.563,
+    "plcc": 0.491,
+    "params_m": 6.2,
+    "flops_g": 15.1,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "Max360IQ",
+    "dataset": "OIQ-10K",
+    "srcc": 0.751,
+    "plcc": 0.733,
+    "params_m": 6.2,
+    "flops_g": 15.1,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VU-BOIQA",
+    "dataset": "CVIQ",
+    "srcc": 0.963,
+    "plcc": 0.958,
+    "params_m": 30.2,
+    "flops_g": 40.8,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VU-BOIQA",
+    "dataset": "OIQA",
+    "srcc": 0.976,
+    "plcc": 0.973,
+    "params_m": 30.2,
+    "flops_g": 40.8,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VU-BOIQA",
+    "dataset": "MVAQD",
+    "srcc": 0.965,
+    "plcc": 0.97,
+    "params_m": 30.2,
+    "flops_g": 40.8,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VU-BOIQA",
+    "dataset": "IQA-ODI",
+    "srcc": 0.905,
+    "plcc": 0.934,
+    "params_m": 30.2,
+    "flops_g": 40.8,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VU-BOIQA",
+    "dataset": "AIGCOIQA2024",
+    "srcc": 0.888,
+    "plcc": 0.881,
+    "params_m": 30.2,
+    "flops_g": 40.8,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VU-BOIQA",
+    "dataset": "JUFE-10K",
+    "srcc": 0.782,
+    "plcc": 0.781,
+    "params_m": 30.2,
+    "flops_g": 40.8,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VU-BOIQA",
+    "dataset": "OIQ-10K",
+    "srcc": 0.766,
+    "plcc": 0.749,
+    "params_m": 30.2,
+    "flops_g": 40.8,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VUGA",
+    "dataset": "CVIQ",
+    "srcc": 0.97,
+    "plcc": 0.984,
+    "params_m": 41.2,
+    "flops_g": 7.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VUGA",
+    "dataset": "OIQA",
+    "srcc": 0.973,
+    "plcc": 0.974,
+    "params_m": 41.2,
+    "flops_g": 7.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VUGA",
+    "dataset": "MVAQD",
+    "srcc": 0.966,
+    "plcc": 0.973,
+    "params_m": 41.2,
+    "flops_g": 7.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VUGA",
+    "dataset": "IQA-ODI",
+    "srcc": 0.967,
+    "plcc": 0.978,
+    "params_m": 41.2,
+    "flops_g": 7.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VUGA",
+    "dataset": "AIGCOIQA2024",
+    "srcc": 0.913,
+    "plcc": 0.868,
+    "params_m": 41.2,
+    "flops_g": 7.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VUGA",
+    "dataset": "JUFE-10K",
+    "srcc": 0.846,
+    "plcc": 0.842,
+    "params_m": 41.2,
+    "flops_g": 7.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "VUGA",
+    "dataset": "OIQ-10K",
+    "srcc": 0.83,
+    "plcc": 0.834,
+    "params_m": 41.2,
+    "flops_g": 7.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "GAQC",
+    "dataset": "CVIQ",
+    "srcc": 0.957,
+    "plcc": 0.959,
+    "params_m": 4.7,
+    "flops_g": 1.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "GAQC",
+    "dataset": "OIQA",
+    "srcc": 0.983,
+    "plcc": 0.985,
+    "params_m": 4.7,
+    "flops_g": 1.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "GAQC",
+    "dataset": "MVAQD",
+    "srcc": 0.943,
+    "plcc": 0.955,
+    "params_m": 4.7,
+    "flops_g": 1.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "GAQC",
+    "dataset": "IQA-ODI",
+    "srcc": 0.894,
+    "plcc": 0.893,
+    "params_m": 4.7,
+    "flops_g": 1.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "GAQC",
+    "dataset": "AIGCOIQA2024",
+    "srcc": 0.885,
+    "plcc": 0.877,
+    "params_m": 4.7,
+    "flops_g": 1.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "GAQC",
+    "dataset": "JUFE-10K",
+    "srcc": 0.835,
+    "plcc": 0.83,
+    "params_m": 4.7,
+    "flops_g": 1.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  },
+  {
+    "method": "GAQC",
+    "dataset": "OIQ-10K",
+    "srcc": 0.842,
+    "plcc": 0.837,
+    "params_m": 4.7,
+    "flops_g": 1.5,
+    "source": "Survey manuscript, Table 3",
+    "evaluation": "Reported literature and supplementary retraining; not rerun here"
+  }
+]

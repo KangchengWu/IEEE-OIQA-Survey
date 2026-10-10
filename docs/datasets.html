@@ -1,0 +1,458 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>datasets · OIQA</title><style>:root{color-scheme:light;--bg:#f5f7fa;--paper:#fff;--ink:#1f2328;--muted:#636c76;--line:#d1d9e0;--subtle:#f6f8fa;--link:#0969da}html.dark{color-scheme:dark;--bg:#090e15;--paper:#0d1117;--ink:#e6edf3;--muted:#9ba9ba;--line:#30363d;--subtle:#161b22;--link:#79c0ff}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.topbar{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:12px max(24px,calc((100vw - 1040px)/2));background:var(--paper);border-bottom:1px solid var(--line);font-size:13px;gap:12px}.brand{font-weight:650;letter-spacing:.5px}.topbar small{color:var(--muted)}button{background:var(--subtle);color:var(--ink);border:1px solid var(--line);padding:7px 12px;border-radius:7px;cursor:pointer}article{max-width:1040px;margin:28px auto 60px;padding:40px 48px;background:var(--paper);border:1px solid var(--line);border-radius:10px}h1,h2,h3,h4{line-height:1.35;font-weight:650}h1{font-size:29px;padding-bottom:12px;border-bottom:1px solid var(--line);margin:26px 0 14px}h2{font-size:24px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-top:40px}h3{font-size:19px;margin-top:28px}p{margin:16px 0}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}img{max-width:100%;height:auto;vertical-align:middle}sub{font-size:12px;color:var(--muted);line-height:1.7;display:inline-block;margin-top:10px}table{border-spacing:0;border-collapse:collapse;display:block;width:max-content;max-width:100%;overflow:auto;margin:18px 0 24px;font-size:14px}th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;min-width:80px}th{font-weight:650;background:var(--subtle)}tr:nth-child(2n){background:var(--subtle)}td a{overflow-wrap:anywhere}td:first-child{min-width:150px}details{margin:10px 0 16px}summary{cursor:pointer;padding:11px 0;line-height:1.5}summary:hover{color:var(--link)}details[open]{padding-bottom:12px}details>table{margin-top:8px}hr{border:0;border-top:1px solid var(--line);margin:30px 0}blockquote{margin:20px 0;padding:0 18px;color:var(--muted);border-left:4px solid var(--line)}code{background:var(--subtle);padding:2px 5px;border-radius:4px;font:85% Consolas,monospace}pre{overflow:auto;background:var(--subtle);padding:20px;border-radius:6px}pre code{background:none;padding:0}li{margin:9px 0}a[id]{display:block;scroll-margin-top:76px}@media(max-width:700px){article{margin:0;border:0;border-radius:0;padding:24px 18px}h1{font-size:24px}h2{font-size:21px}.topbar{padding:10px 18px}.topbar small{display:none}th,td{padding:8px 10px}.topbar .brand{font-size:12px}}</style></head><body><div class="topbar"><span class="brand">OIQA / RESEARCH RESOURCE HUB</span><button id="theme">Dark mode</button></div><article><h1>Dataset Access Guide</h1>
+<p><a href="../preview.html#datasets">← Back to the resource hub</a></p>
+<p>This page follows the 18 datasets in Table 2 of the survey. Years, counts, distortion types, score ranges, and maximum resolutions follow that table. Source-specific access instructions and qualifications are recorded below. Source pages were checked on <strong>2026-10-09</strong>; complete datasets were not downloaded.</p>
+<p><strong>GB</strong>: Gaussian blur; <strong>GN</strong>: Gaussian noise; <strong>WN</strong>: white noise; <strong>BD</strong>: brightness discontinuity; <strong>ST</strong>: stitching distortion. <strong>MOS</strong>: mean opinion score; <strong>DMOS</strong>: differential mean opinion score. Check each dataset&#39;s score direction before evaluation.</p>
+<p><a href="#dataset-1">CVIQ</a> · <a href="#dataset-2">OIQA</a> · <a href="#dataset-3">MVAQD</a> · <a href="#dataset-4">IQA-ODI</a> · <a href="#dataset-5">LIVE 3D VR IQA</a> · <a href="#dataset-6">NBU-HOID</a> · <a href="#dataset-7">NBU-SOID</a> · <a href="#dataset-8">SOLID</a> · <a href="#dataset-9">ISIQA</a> · <a href="#dataset-10">CROSS</a> · <a href="#dataset-11">JUFE</a> · <a href="#dataset-12">OSIQA</a> · <a href="#dataset-13">JUFE-10K</a> · <a href="#dataset-14">OIQ-10K</a> · <a href="#dataset-15">OIQ-10K+</a> · <a href="#dataset-16">JUFE-10K+</a> · <a href="#dataset-17">AIGCOIQA2024</a> · <a href="#dataset-18">OHF2024</a></p>
+<p><a id="dataset-1"></a></p>
+<h2>CVIQ</h2>
+<p><strong>2018 · Monocular OIs / ERP · Homogeneous OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">16 / 528</td>
+<td align="left">JPEG; H.264/AVC; H.265/HEVC</td>
+<td align="left">[0, 100]</td>
+<td align="left">4096 × 2048</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Author release</strong></p>
+<p>Baidu access code: <code>b17u</code>. Subjective scores are provided in <code>CVIQ.mat</code>.</p>
+<ul>
+<li><a href="https://pan.baidu.com/s/1b3j5iO3jQWf2fZPAli9ozw">Baidu Netdisk</a></li>
+<li><a href="https://drive.google.com/open?id=12E-sDZOq0DfCtNNwdyer7azfLZNNva6N">Google Drive</a></li>
+</ul>
+<p>Source: <a href="https://github.com/sunwei925/CVIQDatabase">Author / project page</a></p>
+<p><strong>Survey reference [8]:</strong> <a href="https://doi.org/10.1109/mmsp.2018.8547102">A large-scale compressed 360-degree spherical image database: From subjective quality evaluation to objective model comparison</a>.</p>
+<p><a id="dataset-2"></a></p>
+<h2>OIQA</h2>
+<p><strong>2018 · Monocular OIs / ERP · Homogeneous OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">16 / 320</td>
+<td align="left">JPEG; JP2K; GB; GN</td>
+<td align="left">[1, 10]</td>
+<td align="left">13320 × 6660</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Research mirror</strong></p>
+<p>The download is listed in the GSR authors&#39; repository, a third-party research source. The original dataset authors&#39; current download page has not been confirmed.</p>
+<ul>
+<li><a href="https://mega.nz/file/FqxxRQRR#4Ju2qcmmo6Ced_7nRBXXqAaDcjqxjH2uUFnXIeyE2ts">MEGA mirror</a></li>
+</ul>
+<p>Source: <a href="https://github.com/xiangjieSui/GSR">Author / project page</a></p>
+<p><strong>Survey reference [5]:</strong> <a href="https://doi.org/10.1109/iscas.2018.8351786">Perceptual quality assessment of omnidirectional images</a>.</p>
+<p><a id="dataset-3"></a></p>
+<h2>MVAQD</h2>
+<p><strong>2021 · Monocular OIs / ERP · Homogeneous OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">15 / 300</td>
+<td align="left">JPEG; JPEG2000; HEVC; WN; GB</td>
+<td align="left">[1, 5]</td>
+<td align="left">5780 × 2890</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Email request</strong></p>
+<p>The official README directs users to contact Gangyi Jiang at <code>jgyvciplab@126.com</code> to request the data and password.</p>
+<p>Source: <a href="https://github.com/Jianghao2019/MVAQD">Author / project page</a></p>
+<p><strong>Survey reference [10]:</strong> <a href="https://doi.org/10.1109/tip.2021.3052073">Cubemap-based perception-driven blind quality assessment for 360-degree images</a>.</p>
+<p><a id="dataset-4"></a></p>
+<h2>IQA-ODI</h2>
+<p><strong>2021 · Monocular OIs / ERP and multiple projections · Homogeneous OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">120 / 960</td>
+<td align="left">JPEG; Projection</td>
+<td align="left">[0, 100]</td>
+<td align="left">7680 × 3840</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Author release</strong></p>
+<p>Download both the images and the labels. The authors state that <strong>higher DMOS indicates poorer quality</strong>. Account for this direction before comparing with MOS values for which higher scores indicate better quality.</p>
+<ul>
+<li><a href="https://www.dropbox.com/s/agmu8ljwal6a25e/all_ref_test_img.zip?dl=0">Images (Dropbox)</a></li>
+<li><a href="https://www.dropbox.com/sh/2s7x4ddut0i1ymm/AAC2MyM2TlyNLCpzFiHWpFnZa?dl=0">Labels and metadata</a></li>
+</ul>
+<p>Source: <a href="https://github.com/yanglixiaoshen/SAP-Net">Author / project page</a></p>
+<p><strong>Survey reference [9]:</strong> <a href="https://doi.org/10.1109/icme51207.2021.9428390">Spatial attention-based non-reference perceptual quality prediction network for omnidirectional images</a>.</p>
+<p><a id="dataset-5"></a></p>
+<h2>LIVE 3D VR IQA</h2>
+<p><strong>2019 · Stereoscopic OIs / ERP · Homogeneous OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">15 / 450</td>
+<td align="left">GB; GN; downsampling; VP9; H.265; ST</td>
+<td align="left">[0, 100]</td>
+<td align="left">4096 × 2048</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Request form</strong></p>
+<p>The official website requires a download request form. The database includes subjective scores and eye-tracking data.</p>
+<ul>
+<li><a href="https://forms.gle/p7bC5P5W6C3md3wT6">Request form</a></li>
+</ul>
+<p>Source: <a href="https://live.ece.utexas.edu/research/VR3D/index.html">Author / project page</a></p>
+<p><strong>Survey reference [55]:</strong> <a href="https://doi.org/10.1109/jstsp.2019.2956408">Study of 3D virtual reality picture quality</a>.</p>
+<p><a id="dataset-6"></a></p>
+<h2>NBU-HOID</h2>
+<p><strong>2021 · High dynamic range OIs / ERP · Homogeneous OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">16 / 320</td>
+<td align="left">JPEG XT; tone mapping</td>
+<td align="left">[1, 9]</td>
+<td align="left">5376 × 2688</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Author release</strong></p>
+<p>Baidu access code: <code>lx5g</code>. The database covers high dynamic range OIs, JPEG XT compression, and tone mapping.</p>
+<ul>
+<li><a href="https://pan.baidu.com/s/1lzr7NUqhfQJb4gxyAE5cJA">Baidu Netdisk</a></li>
+</ul>
+<p>Source: <a href="https://github.com/caoliuyan/NBU-HOID">Author / project page</a></p>
+<p><strong>Survey reference [56]:</strong> <a href="https://doi.org/10.1109/tim.2021.3093940">Quality measurement for high dynamic range omnidirectional image systems</a>.</p>
+<p><a id="dataset-7"></a></p>
+<h2>NBU-SOID</h2>
+<p><strong>2021 · Stereoscopic OIs / ERP · Homogeneous OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">12 / 396</td>
+<td align="left">JPEG; JPEG2000; HEVC</td>
+<td align="left">[1, 5]</td>
+<td align="left">4096 × 4096</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Author release</strong></p>
+<p>Baidu access code: <code>yr64</code>; archive password: <code>NBU-SOID2019</code>. The authors&#39; README calls the labels DMOS but also describes 1 as worst and 5 as best. Check the actual label definition before deciding the score direction.</p>
+<ul>
+<li><a href="https://pan.baidu.com/s/1UKjtZ6XRJ46AF9Hf7vQpOw">Baidu Netdisk</a></li>
+</ul>
+<p>Source: <a href="https://github.com/qyb123/NBU-SOID">Author / project page</a></p>
+<p><strong>Survey reference [57]:</strong> <a href="https://doi.org/10.1109/tcsvt.2020.3043349">Viewport perception based blind stereoscopic omnidirectional image quality assessment</a>.</p>
+<p><a id="dataset-8"></a></p>
+<h2>SOLID</h2>
+<p><strong>2018 · Stereoscopic OIs / ERP · Homogeneous OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">6 / 276</td>
+<td align="left">JPEG; BPG</td>
+<td align="left">[1, 5]</td>
+<td align="left">8192 × 4096</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Request form</strong></p>
+<p>The official page describes SOLID Phase II and cites the PCM 2018 paper. Its top-bottom stereoscopic representation is 8192 × 8192; distinguish this from the 8192 × 4096 single-view representation listed in the survey.</p>
+<ul>
+<li><a href="https://jinshuju.net/f/u3EPcv">Request form</a></li>
+</ul>
+<p>Source: <a href="https://faculty.ustc.edu.cn/chenzhibo/zh_CN/article/988216/content/2461.htm">Author / project page</a></p>
+<p><strong>Survey reference [58]:</strong> <a href="https://doi.org/10.1007/978-3-030-00776-8_54">Subjective quality assessment of stereoscopic omnidirectional image</a>.</p>
+<p><a id="dataset-9"></a></p>
+<h2>ISIQA</h2>
+<p><strong>2019 · Monocular OIs / ERP · Heterogeneous OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">26 / 264</td>
+<td align="left">ST</td>
+<td align="left">[0, 100]</td>
+<td align="left">9270 × 1680</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Download + password request</strong></p>
+<p>The authors&#39; page provides an archive and asks users to complete a form for its password; use the current form on that page. The count of 26 denotes source scenes, rather than 26 paired pristine panoramic reference images. A <a href="https://github.com/pavancm/Stitched-Image-Quality-Evaluator">MATLAB implementation of SIQE</a> is also available.</p>
+<ul>
+<li><a href="http://ece.iisc.ac.in/~rajivs/databases/isiqa_release.zip">Image archive</a></li>
+</ul>
+<p>Source: <a href="https://pavancm.github.io/stitched-qa/">Author / project page</a></p>
+<p><strong>Survey reference [59]:</strong> <a href="https://doi.org/10.1109/tip.2019.2921858">Subjective and objective quality assessment of stitched images for virtual reality</a>.</p>
+<p><a id="dataset-10"></a></p>
+<h2>CROSS</h2>
+<p><strong>2019 · Monocular OIs / ERP · Heterogeneous OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">292 / 2044</td>
+<td align="left">ST</td>
+<td align="left">[0, 100]</td>
+<td align="left">5792 × 2894</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Paper only</strong></p>
+<p>The original paper is linked. A current download page from the authors has not been confirmed.</p>
+<p><strong>Survey reference [60]:</strong> <a href="https://doi.org/10.1145/3343031.3350973">Cross-reference stitching quality assessment for 360 omnidirectional images</a>.</p>
+<p><a id="dataset-11"></a></p>
+<h2>JUFE</h2>
+<p><strong>2022 · Monocular OIs / ERP · Heterogeneous OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">258 / 1032</td>
+<td align="left">GB; GN; BD; ST</td>
+<td align="left">[1, 5]</td>
+<td align="left">8192 × 4096</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Author release</strong></p>
+<p>Baidu access code: <code>92rc</code>. Resources include images, MOS, starting points, head movements, and eye movements.</p>
+<ul>
+<li><a href="https://pan.baidu.com/s/1HU3Qp8BCGdCXynYN0ZPTXQ">Baidu Netdisk</a></li>
+<li><a href="https://drive.google.com/drive/folders/1ro9D6LOhpd-t6f_X0P5Rx5dkgF8fDJPS?usp=sharing">Google Drive</a></li>
+</ul>
+<p>Source: <a href="https://github.com/LXLHXL123/JUFE-VRIQA">Author / project page</a></p>
+<p><strong>Survey reference [11]:</strong> <a href="https://doi.org/10.1609/aaai.v36i1.19937">Perceptual quality assessment of omnidirectional images</a>.</p>
+<p><a id="dataset-12"></a></p>
+<h2>OSIQA</h2>
+<p><strong>2023 · Monocular stitched OIs / ERP · Heterogeneous OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">300 / 300</td>
+<td align="left">ST (color, geometric, blur, ghosting)</td>
+<td align="left">Not reported</td>
+<td align="left">5792 × 2896</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Paper only</strong></p>
+<p>The survey lists 300 / 300, with the first count drawn from 12 raw scenes. These counts are not directly equivalent to conventional paired reference/distorted image counts. A current download page from the authors has not been confirmed.</p>
+<p><strong>Survey reference [61]:</strong> <a href="https://doi.org/10.1109/jstsp.2023.3250956">Attentive deep image quality assessment for omnidirectional stitching</a>.</p>
+<p><a id="dataset-13"></a></p>
+<h2>JUFE-10K</h2>
+<p><strong>2024 · Monocular OIs / ERP · Heterogeneous OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">430 / 10320</td>
+<td align="left">GN; GB; BD; ST</td>
+<td align="left">[1, 5]</td>
+<td align="left">8192 × 4096</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Author release</strong></p>
+<p>Baidu access code: <code>JUFE</code> (uppercase). The authors&#39; repository provides the dataset and the OIQAND implementation.</p>
+<ul>
+<li><a href="https://pan.baidu.com/s/1eL1yee3wISC1QVn4zXnXrw">Baidu Netdisk</a></li>
+</ul>
+<p>Source: <a href="https://github.com/RJL2000/OIQAND">Author / project page</a></p>
+<p><strong>Survey reference [6]:</strong> <a href="https://doi.org/10.1109/tmm.2025.3535372">Subjective and objective quality assessment of non-uniformly distorted omnidirectional images</a>.</p>
+<p><a id="dataset-14"></a></p>
+<h2>OIQ-10K</h2>
+<p><strong>2024 · Monocular OIs / ERP · Heterogeneous OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2500 / 7500</td>
+<td align="left">Homogeneous and heterogeneous distortions</td>
+<td align="left">[1, 3]</td>
+<td align="left">10320 × 8196</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Author release</strong></p>
+<p>Baidu access code: <code>jvga</code>. The database comprises 2,500 images without perceptible distortion and 7,500 distorted images, for 10,000 images in total. This does not imply that every distorted image has a paired reference. The repository also provides IQCaption360.</p>
+<ul>
+<li><a href="https://pan.baidu.com/s/1Uy0AR9B2oCAIJuLCuZEtLg">Baidu Netdisk</a></li>
+<li><a href="https://drive.google.com/file/d/1IJgsXB0GcavodXsEa6ee003s5WVp8WtJ/view?usp=sharing">MOS and metadata</a></li>
+</ul>
+<p>Source: <a href="https://github.com/WenJuing/IQCaption360">Author / project page</a></p>
+<p><strong>Survey reference [12]:</strong> <a href="https://doi.org/10.1109/tip.2025.3539468">Omnidirectional image quality captioning: A large-scale database and a new model</a>.</p>
+<p><a id="dataset-15"></a></p>
+<h2>OIQ-10K+</h2>
+<p><strong>2025 · Monocular OIs / ERP · Multimodal OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2500 / 7500</td>
+<td align="left">Homogeneous and heterogeneous distortions</td>
+<td align="left">[1, 3]</td>
+<td align="left">10320 × 8196</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Request from authors</strong></p>
+<p>The publisher&#39;s Data Availability statement says that data are available from the second author upon reasonable request. Request the extended textual annotations; the base OIQ-10K download is not equivalent to OIQ-10K+. The survey lists 2025, while the journal publication page gives 2026.</p>
+<p>Source: <a href="https://link.springer.com/article/10.1007/s11263-025-02626-w">Author / project page</a></p>
+<p><strong>Survey reference [62]:</strong> <a href="https://doi.org/10.1007/s11263-025-02626-w">Blind omnidirectional image quality assessment: Embracing the magic power of multimodal large language models</a>.</p>
+<p><a id="dataset-16"></a></p>
+<h2>JUFE-10K+</h2>
+<p><strong>2025 · Monocular OIs / ERP · Multimodal OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">430 / 10320</td>
+<td align="left">GN; GB; BD; ST</td>
+<td align="left">[1, 5]</td>
+<td align="left">8192 × 4096</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Request from authors</strong></p>
+<p>The publisher states that data are available from the second author upon reasonable request. Distinguish the base JUFE-10K images from the extended quality descriptions. The survey lists 2025, while the journal publication page gives 2026.</p>
+<p>Source: <a href="https://link.springer.com/article/10.1007/s11263-025-02626-w">Author / project page</a></p>
+<p><strong>Survey reference [62]:</strong> <a href="https://doi.org/10.1007/s11263-025-02626-w">Blind omnidirectional image quality assessment: Embracing the magic power of multimodal large language models</a>.</p>
+<p><a id="dataset-17"></a></p>
+<h2>AIGCOIQA2024</h2>
+<p><strong>2024 · AI-generated OIs / ERP · Multimodal OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">- / 300</td>
+<td align="left">AIGC-specific distortion</td>
+<td align="left">[0, 100]</td>
+<td align="left">4096 × 2048</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Author release</strong></p>
+<p>The authors&#39; README describes 300 generated images, with subjective scores and prompts in <code>MOS&amp;prompts.xlsx</code>.</p>
+<ul>
+<li><a href="https://terabox.com/s/17YIkFc-PFeviUbtGP1ReYQ">TeraBox</a></li>
+</ul>
+<p>Source: <a href="https://github.com/IntMeGroup/AIGCOIQA">Author / project page</a></p>
+<p><strong>Survey reference [7]:</strong> <a href="https://doi.org/10.1109/icip51287.2024.10647885">AIGCOIQA2024: Perceptual quality assessment of AI generated omnidirectional images</a>.</p>
+<p><a id="dataset-18"></a></p>
+<h2>OHF2024</h2>
+<p><strong>2025 · AI-generated OIs / ERP · Multimodal OIQA</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Scale (survey convention)</th>
+<th align="left">Distortion type</th>
+<th align="left">Score range</th>
+<th align="left">Max resolution</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">- / 600</td>
+<td align="left">AIGC-specific distortion</td>
+<td align="left">[0, 100]</td>
+<td align="left">Not reported</td>
+</tr>
+</tbody></table>
+<p><strong>Access: Project page</strong></p>
+<p>The corresponding project page has been located, but its README does not list an OHF2024 download. The 300-image AIGCOIQA2024 database must not be substituted for the 600-image OHF2024 database.</p>
+<p>Source: <a href="https://github.com/ylylyl-sjtu/BLIP2OIQA-BLIP2OISal">Author / project page</a></p>
+<p><strong>Survey reference [63]:</strong> <a href="https://doi.org/10.1109/tcsvt.2025.3616234">Quality assessment and distortion-aware saliency prediction for AI-generated omnidirectional images</a>.</p>
+</article><script>document.querySelector('#theme').onclick=()=>{const dark=document.documentElement.classList.toggle('dark');document.querySelector('#theme').textContent=dark?'Light mode':'Dark mode'};</script></body></html>

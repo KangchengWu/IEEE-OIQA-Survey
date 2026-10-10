@@ -1,0 +1,622 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>methods · OIQA</title><style>:root{color-scheme:light;--bg:#f5f7fa;--paper:#fff;--ink:#1f2328;--muted:#636c76;--line:#d1d9e0;--subtle:#f6f8fa;--link:#0969da}html.dark{color-scheme:dark;--bg:#090e15;--paper:#0d1117;--ink:#e6edf3;--muted:#9ba9ba;--line:#30363d;--subtle:#161b22;--link:#79c0ff}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.topbar{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:12px max(24px,calc((100vw - 1040px)/2));background:var(--paper);border-bottom:1px solid var(--line);font-size:13px;gap:12px}.brand{font-weight:650;letter-spacing:.5px}.topbar small{color:var(--muted)}button{background:var(--subtle);color:var(--ink);border:1px solid var(--line);padding:7px 12px;border-radius:7px;cursor:pointer}article{max-width:1040px;margin:28px auto 60px;padding:40px 48px;background:var(--paper);border:1px solid var(--line);border-radius:10px}h1,h2,h3,h4{line-height:1.35;font-weight:650}h1{font-size:29px;padding-bottom:12px;border-bottom:1px solid var(--line);margin:26px 0 14px}h2{font-size:24px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-top:40px}h3{font-size:19px;margin-top:28px}p{margin:16px 0}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}img{max-width:100%;height:auto;vertical-align:middle}sub{font-size:12px;color:var(--muted);line-height:1.7;display:inline-block;margin-top:10px}table{border-spacing:0;border-collapse:collapse;display:block;width:max-content;max-width:100%;overflow:auto;margin:18px 0 24px;font-size:14px}th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top;min-width:80px}th{font-weight:650;background:var(--subtle)}tr:nth-child(2n){background:var(--subtle)}td a{overflow-wrap:anywhere}td:first-child{min-width:150px}details{margin:10px 0 16px}summary{cursor:pointer;padding:11px 0;line-height:1.5}summary:hover{color:var(--link)}details[open]{padding-bottom:12px}details>table{margin-top:8px}hr{border:0;border-top:1px solid var(--line);margin:30px 0}blockquote{margin:20px 0;padding:0 18px;color:var(--muted);border-left:4px solid var(--line)}code{background:var(--subtle);padding:2px 5px;border-radius:4px;font:85% Consolas,monospace}pre{overflow:auto;background:var(--subtle);padding:20px;border-radius:6px}pre code{background:none;padding:0}li{margin:9px 0}a[id]{display:block;scroll-margin-top:76px}@media(max-width:700px){article{margin:0;border:0;border-radius:0;padding:24px 18px}h1{font-size:24px}h2{font-size:21px}.topbar{padding:10px 18px}.topbar small{display:none}th,td{padding:8px 10px}.topbar .brand{font-size:12px}}</style></head><body><div class="topbar"><span class="brand">OIQA / RESEARCH RESOURCE HUB</span><button id="theme">Dark mode</button></div><article><h1>Methods and Implementations</h1>
+<p><a href="../preview.html#methods">← Back to the resource hub</a></p>
+<p>This index retains 61 methods and supporting components from the original resource list. Reference numbers and category headings follow the supplied survey manuscript. Named methods use the manuscript&#39;s acronyms; other entries use author names and reference numbers in the overview. Each entry below gives the full paper title.</p>
+<p><strong>FR</strong>: full-reference; <strong>NR</strong>: no-reference. Supporting components provide scanpaths or feature representations. Code and weight links are included where recorded. Third-party implementations are identified explicitly. A title-search link is not a publisher page.</p>
+<p><a href="#category-1">Conventional OIQA Methods</a> · <a href="#category-2">OIQA Methods Based on ERP Patches</a> · <a href="#category-3">OIQA Methods Based on Single-Reprojection Image</a> · <a href="#category-4">OIQA Methods Based on Multi-Reprojection Image</a> · <a href="#category-5">OIQA Methods Based on Raw ERP Image</a> · <a href="#category-6">OIQA Methods With Fixed Viewport Sampling</a> · <a href="#category-7">OIQA Methods with Saliency-based Viewport Sampling</a> · <a href="#category-8">OIQA Methods with Human Viewing Behavior Modeling</a> · <a href="#category-9">Supporting Components</a></p>
+<p><a id="category-1"></a></p>
+<h2>Conventional OIQA Methods</h2>
+<p><a id="method-1"></a></p>
+<h3>S-PSNR</h3>
+<p><strong>FR · Survey reference [39]</strong></p>
+<p><strong>Paper:</strong> A framework to evaluate omnidirectional video coding schemes.</p>
+<ul>
+<li><strong>Input:</strong> Spherical sampling</li>
+<li><strong>Modeling:</strong> PSNR with spherical sampling</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/ismar.2015.12">Paper</a></li>
+</ul>
+<p><strong>Third-party implementation:</strong> <a href="https://github.com/xiangjieSui/OIQA-FR-Metrics">GitHub</a></p>
+<p><a id="method-2"></a></p>
+<h3>WS-PSNR</h3>
+<p><strong>FR · Survey reference [17]</strong></p>
+<p><strong>Paper:</strong> Weighted-to-spherically-uniform quality evaluation for omnidirectional video.</p>
+<ul>
+<li><strong>Input:</strong> ERP with spherical weighting</li>
+<li><strong>Modeling:</strong> Spherically uniform weighted PSNR</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/lsp.2017.2720693">Paper</a></li>
+</ul>
+<p><strong>Third-party implementation:</strong> <a href="https://github.com/xiangjieSui/OIQA-FR-Metrics">GitHub</a></p>
+<p><a id="method-3"></a></p>
+<h3>CPP-PSNR</h3>
+<p><strong>FR · Survey reference [16]</strong></p>
+<p><strong>Paper:</strong> Quality metric for spherical panoramic video.</p>
+<ul>
+<li><strong>Input:</strong> Craster parabolic projection</li>
+<li><strong>Modeling:</strong> Craster parabolic projection PSNR</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1117/12.2235885">Paper</a></li>
+</ul>
+<p><strong>Third-party implementation:</strong> <a href="https://github.com/xiangjieSui/OIQA-FR-Metrics">GitHub</a></p>
+<p>CPP denotes Craster parabolic projection.</p>
+<p><a id="method-4"></a></p>
+<h3>NCP-PSNR</h3>
+<p><strong>FR · Survey reference [40]</strong></p>
+<p><strong>Paper:</strong> Assessing visual quality of omnidirectional videos.</p>
+<ul>
+<li><strong>Input:</strong> Spherical sampling</li>
+<li><strong>Modeling:</strong> PSNR adapted to omnidirectional content [40]</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tcsvt.2018.2886277">Paper</a></li>
+</ul>
+<p><a href="https://arxiv.org/pdf/1709.06342">Additional reading link</a></p>
+<p><a id="method-5"></a></p>
+<h3>CP-PSNR</h3>
+<p><strong>FR · Survey reference [40]</strong></p>
+<p><strong>Paper:</strong> Assessing visual quality of omnidirectional videos.</p>
+<ul>
+<li><strong>Input:</strong> Spherical sampling</li>
+<li><strong>Modeling:</strong> PSNR adapted to omnidirectional content [40]</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tcsvt.2018.2886277">Paper</a></li>
+</ul>
+<p><a href="https://arxiv.org/pdf/1709.06342">Additional reading link</a></p>
+<p><a id="method-6"></a></p>
+<h3>S-SSIM</h3>
+<p><strong>FR · Survey reference [14]</strong></p>
+<p><strong>Paper:</strong> Spherical structural similarity index for objective omnidirectional video quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> Spherical sampling</li>
+<li><strong>Modeling:</strong> Structural similarity on the sphere</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/icme.2018.8486584">Paper</a></li>
+</ul>
+<p><strong>Third-party implementation:</strong> <a href="https://github.com/xiangjieSui/OIQA-FR-Metrics">GitHub</a></p>
+<p><a id="method-7"></a></p>
+<h3>WS-SSIM</h3>
+<p><strong>FR · Survey reference [15]</strong></p>
+<p><strong>Paper:</strong> Weighted-to-spherically-uniform SSIM objective quality evaluation for panoramic video.</p>
+<ul>
+<li><strong>Input:</strong> ERP with spherical weighting</li>
+<li><strong>Modeling:</strong> Spherically uniform weighted SSIM</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/icsp.2018.8652269">Paper</a></li>
+</ul>
+<p><a id="category-2"></a></p>
+<h2>OIQA Methods Based on ERP Patches</h2>
+<p><a id="method-8"></a></p>
+<h3>VR IQA NET</h3>
+<p><strong>NR · Survey reference [41]</strong></p>
+<p><strong>Paper:</strong> VR IQA NET: Deep virtual reality image quality assessment using adversarial learning.</p>
+<ul>
+<li><strong>Input:</strong> ERP patches</li>
+<li><strong>Modeling:</strong> Adversarial patch quality and perceptual weighting</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/icassp.2018.8461317">Paper</a></li>
+</ul>
+<p><a href="https://arxiv.org/pdf/1804.03943">Additional reading link</a></p>
+<p><a id="method-9"></a></p>
+<h3>DeepVR-IQA</h3>
+<p><strong>NR · Survey reference [42]</strong></p>
+<p><strong>Paper:</strong> Deep virtual reality image quality assessment with human perception guider for omnidirectional image.</p>
+<ul>
+<li><strong>Input:</strong> ERP patches</li>
+<li><strong>Modeling:</strong> Human perception guider with deep features</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tcsvt.2019.2898732">Paper</a></li>
+</ul>
+<p><a id="method-10"></a></p>
+<h3>Sendjasni et al. [43]</h3>
+<p><strong>NR · Survey reference [43]</strong></p>
+<p><strong>Paper:</strong> Adaptive patch labeling and multi-label feature selection for 360-degree image quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> ERP patches</li>
+<li><strong>Modeling:</strong> Patch label distributions and feature selection</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/mmsp59012.2023.10337664">Paper</a></li>
+</ul>
+<p><a href="https://hal.science/hal-04729225v1/file/Publications_Sendja-18.pdf">Additional reading link</a></p>
+<p><a id="method-11"></a></p>
+<h3>VU-BOIQA</h3>
+<p><strong>NR · Survey reference [28]</strong></p>
+<p><strong>Paper:</strong> Viewport-unaware blind omnidirectional image quality assessment: A flexible and effective paradigm.</p>
+<ul>
+<li><strong>Input:</strong> Adaptive ERP patch sequences</li>
+<li><strong>Modeling:</strong> Adaptive prior-equator sampling and progressive deformation-unaware feature fusion</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1145/3723165">Paper</a></li>
+</ul>
+<p><strong>Author implementation:</strong> <a href="https://github.com/KangchengWu/OIQA">GitHub</a></p>
+<p>The linked repository contains <code>train.py</code>. Consult the source for training configuration details, as its README is brief.</p>
+<p><a id="method-12"></a></p>
+<h3>IPSS</h3>
+<p><strong>FR · Survey reference [32]</strong></p>
+<p><strong>Paper:</strong> Viewport-unaware full-reference omnidirectional image quality assessment with inter-patch and sequence similarity.</p>
+<ul>
+<li><strong>Input:</strong> ERP patches and patch sequences</li>
+<li><strong>Modeling:</strong> Deformation-aware convolution with inter-patch and patch-sequence similarities</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tcsvt.2026.3651643">Paper</a></li>
+</ul>
+<p>A full-reference (FR) method: the quality predictor requires a reference image.</p>
+<p><a id="method-13"></a></p>
+<h3>Yan et al. [44]</h3>
+<p><strong>FR · Survey reference [44]</strong></p>
+<p><strong>Paper:</strong> Towards scalable and efficient full-reference omnidirectional image quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> ERP patches</li>
+<li><strong>Modeling:</strong> Cross-patch self-attention for degradation and similarity</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/lsp.2025.3569458">Paper</a></li>
+</ul>
+<p>The survey describes this as a lightweight version of IPSS [32], using cross-patch self-attention. It is a full-reference (FR) method.</p>
+<p><a id="category-3"></a></p>
+<h2>OIQA Methods Based on Single-Reprojection Image</h2>
+<p><a id="method-14"></a></p>
+<h3>Zheng et al. [35]</h3>
+<p><strong>NR · Survey reference [35]</strong></p>
+<p><strong>Paper:</strong> Segmented spherical projection-based blind omnidirectional image quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> Segmented spherical projection</li>
+<li><strong>Modeling:</strong> Bipolar/equatorial feature modeling</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/access.2020.2972158">Paper</a></li>
+</ul>
+<p><a href="https://ieeexplore.ieee.org/ielx7/6287639/8948470/08985280.pdf">Additional reading link</a></p>
+<p><a id="method-15"></a></p>
+<h3>Jiang et al. [10]</h3>
+<p><strong>NR · Survey reference [10]</strong></p>
+<p><strong>Paper:</strong> Cubemap-based perception-driven blind quality assessment for 360-degree images.</p>
+<ul>
+<li><strong>Input:</strong> Cubemap</li>
+<li><strong>Modeling:</strong> Attention features and cross-face fusion</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tip.2021.3052073">Paper</a></li>
+</ul>
+<p><a id="method-16"></a></p>
+<h3>Zhou et al. [45]</h3>
+<p><strong>NR · Survey reference [45]</strong></p>
+<p><strong>Paper:</strong> Perception-oriented U-shaped transformer network for 360-degree no-reference image quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> Cubemap patches</li>
+<li><strong>Modeling:</strong> Saliency-guided multi-stream Transformer</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tbc.2022.3231101">Paper</a></li>
+</ul>
+<p><a id="method-17"></a></p>
+<h3>OmiQnet</h3>
+<p><strong>NR · Survey reference [33]</strong></p>
+<p><strong>Paper:</strong> OmiQnet: Multiscale feature aggregation convolutional neural network for omnidirectional image assessment.</p>
+<ul>
+<li><strong>Input:</strong> CMP image</li>
+<li><strong>Modeling:</strong> Multiscale feature aggregation</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1007/s10489-024-05421-1">Paper</a></li>
+</ul>
+<p><a id="method-18"></a></p>
+<h3>Wang et al. [34]</h3>
+<p><strong>NR · Survey reference [34]</strong></p>
+<p><strong>Paper:</strong> Blind omnidirectional image quality assessment based on semantic information replenishment.</p>
+<ul>
+<li><strong>Input:</strong> Cubemap</li>
+<li><strong>Modeling:</strong> Semantic replenishment across faces</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1016/j.jvcir.2024.104241">Paper</a></li>
+</ul>
+<p><a id="method-19"></a></p>
+<h3>Liu et al. [46]</h3>
+<p><strong>NR · Survey reference [46]</strong></p>
+<p><strong>Paper:</strong> Omnidirectional image quality assessment using frequency-domain information.</p>
+<ul>
+<li><strong>Input:</strong> CMP image / frequency-domain information</li>
+<li><strong>Modeling:</strong> Frequency-domain distortion modeling</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1016/j.patcog.2025.112882">Paper</a></li>
+</ul>
+<p><a id="category-4"></a></p>
+<h2>OIQA Methods Based on Multi-Reprojection Image</h2>
+<p><a id="method-20"></a></p>
+<h3>Jiang et al. [47]</h3>
+<p><strong>NR · Survey reference [47]</strong></p>
+<p><strong>Paper:</strong> Multi-angle projection based blind omnidirectional image quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> Multiple projection angles</li>
+<li><strong>Modeling:</strong> Complementary projection feature fusion</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tcsvt.2021.3128014">Paper</a></li>
+</ul>
+<p><a id="method-21"></a></p>
+<h3>MFAN</h3>
+<p><strong>NR / FR · Survey reference [37]</strong></p>
+<p><strong>Paper:</strong> MFAN: A multi-projection fusion attention network for no-reference and full-reference panoramic image quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> Multiple projection formats</li>
+<li><strong>Modeling:</strong> Multi-projection fusion attention</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/lsp.2023.3310888">Paper</a></li>
+</ul>
+<p>The paper studies both no-reference (NR) and full-reference (FR) settings.</p>
+<p><a id="method-22"></a></p>
+<h3>Xiao et al. [48]</h3>
+<p><strong>NR · Survey reference [48]</strong></p>
+<p><strong>Paper:</strong> Omnidirectional image quality assessment with gated dual-projection fusion.</p>
+<ul>
+<li><strong>Input:</strong> ERP and CMP</li>
+<li><strong>Modeling:</strong> Gated fusion at multiple network stages</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1016/j.displa.2025.103173">Paper</a></li>
+</ul>
+<p><a id="method-23"></a></p>
+<h3>Hu et al. [49]</h3>
+<p><strong>NR · Survey reference [49]</strong></p>
+<p><strong>Paper:</strong> Cross-projection distilling knowledge for omnidirectional image quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> ERP and alternative projections</li>
+<li><strong>Modeling:</strong> Cross-projection knowledge distillation from an FR teacher to an NR student</li>
+<li><strong>Publication:</strong> <a href="https://www.semanticscholar.org/search?q=Cross-projection+distilling+knowledge+for+omnidirectional+image+quality+assessment">Title search</a></li>
+</ul>
+<p><a id="method-24"></a></p>
+<h3>Ma et al. [50]</h3>
+<p><strong>NR · Survey reference [50]</strong></p>
+<p><strong>Paper:</strong> Omnidirectional image quality assessment with mutual distillation.</p>
+<ul>
+<li><strong>Input:</strong> ERP and CMP</li>
+<li><strong>Modeling:</strong> Mutual distillation between projection branches</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tbc.2024.3503435">Paper</a></li>
+</ul>
+<p><a id="method-25"></a></p>
+<h3>Wan et al. [51]</h3>
+<p><strong>FR · Survey reference [51]</strong></p>
+<p><strong>Paper:</strong> Panoramic image quality evaluation based on visual perception mechanism.</p>
+<ul>
+<li><strong>Input:</strong> ERP and CMP</li>
+<li><strong>Modeling:</strong> DCT structural similarity with equatorial bias</li>
+<li><strong>Publication:</strong> <a href="https://www.semanticscholar.org/search?q=Panoramic+image+quality+evaluation+based+on+visual+perception+mechanism">Title search</a></li>
+</ul>
+<p>The survey explicitly describes this as an interpretable full-reference (FR) OIQA metric.</p>
+<p><a id="category-5"></a></p>
+<h2>OIQA Methods Based on Raw ERP Image</h2>
+<p><a id="method-26"></a></p>
+<h3>SAP-Net</h3>
+<p><strong>NR · Survey reference [9]</strong></p>
+<p><strong>Paper:</strong> Spatial attention-based non-reference perceptual quality prediction network for omnidirectional images.</p>
+<ul>
+<li><strong>Input:</strong> Raw ERP image</li>
+<li><strong>Modeling:</strong> Spatial attention without saliency annotations</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/icme51207.2021.9428390">Paper</a></li>
+</ul>
+<p><strong>Author implementation:</strong> <a href="https://github.com/yanglixiaoshen/SAP-Net">GitHub</a></p>
+<p><a id="method-27"></a></p>
+<h3>Chen et al. [52]</h3>
+<p><strong>NR · Survey reference [52]</strong></p>
+<p><strong>Paper:</strong> No-reference omnidirectional image quality assessment via equirectangular convolution and hierarchically fusion.</p>
+<ul>
+<li><strong>Input:</strong> Raw ERP image</li>
+<li><strong>Modeling:</strong> Geometry-adaptive convolution and feature fusion</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1145/3573942.3574074">Paper</a></li>
+</ul>
+<p><a href="https://dl.acm.org/doi/pdf/10.1145/3573942.3574074">Additional reading link</a></p>
+<p><a id="method-28"></a></p>
+<h3>VUGA</h3>
+<p><strong>NR · Survey reference [29]</strong></p>
+<p><strong>Paper:</strong> Viewport-unaware blind omnidirectional image quality assessment: A unified and generalized approach.</p>
+<ul>
+<li><strong>Input:</strong> Raw ERP image</li>
+<li><strong>Modeling:</strong> Deformable convolution, local-global multi-receptive-field modeling, and progressive hierarchical feature fusion</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tmm.2026.3673590">Paper</a></li>
+</ul>
+<p><strong>Author implementation:</strong> <a href="https://github.com/KangchengWu/VUGA">GitHub</a></p>
+<p><a id="method-29"></a></p>
+<h3>GAQC</h3>
+<p><strong>NR · Survey reference [53]</strong></p>
+<p><strong>Paper:</strong> Efficient blind omnidirectional image quality assessment: A 2D perspective.</p>
+<ul>
+<li><strong>Input:</strong> Raw ERP image</li>
+<li><strong>Modeling:</strong> Frequency- and coordinate-guided deformable convolution with local-global quality-context modeling</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tcsvt.2026.3694394">Paper</a></li>
+</ul>
+<p><strong>Author implementation:</strong> <a href="https://github.com/liziyi1234/GAQC">GitHub</a></p>
+<p><a id="category-6"></a></p>
+<h2>OIQA Methods With Fixed Viewport Sampling</h2>
+<p><a id="method-30"></a></p>
+<h3>MC360IQA</h3>
+<p><strong>NR · Survey reference [64]</strong></p>
+<p><strong>Paper:</strong> MC360IQA: A multi-channel CNN for blind 360-degree image quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> Six fixed viewports</li>
+<li><strong>Modeling:</strong> Multi-channel CNN feature fusion</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/jstsp.2019.2955024">Paper</a></li>
+</ul>
+<p><strong>Author implementation:</strong> <a href="https://github.com/sunwei925/MC360IQA">GitHub</a></p>
+<p><a id="method-31"></a></p>
+<h3>Zhou et al. [65]</h3>
+<p><strong>NR · Survey reference [65]</strong></p>
+<p><strong>Paper:</strong> Omnidirectional image quality assessment by distortion discrimination assisted multi-stream network.</p>
+<ul>
+<li><strong>Input:</strong> CMP face groups with different projection orientations</li>
+<li><strong>Modeling:</strong> Auxiliary distortion discrimination</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tcsvt.2021.3081162">Paper</a></li>
+</ul>
+<p><a id="method-32"></a></p>
+<h3>Liu et al. [66]</h3>
+<p><strong>NR · Survey reference [66]</strong></p>
+<p><strong>Paper:</strong> Dual-level blind omnidirectional image quality assessment network based on human visual perception.</p>
+<ul>
+<li><strong>Input:</strong> Directional viewports</li>
+<li><strong>Modeling:</strong> Human attention and inter-viewport correlation</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.14569/ijacsa.2023.01409112">Paper</a></li>
+</ul>
+<p><a href="http://thesai.org/Downloads/Volume14No9/Paper_112-Dual_Level_Blind_Omnidirectional_Image_Quality_Assessment_Network.pdf">Additional reading link</a></p>
+<p><a id="method-33"></a></p>
+<h3>Feng et al. [67]</h3>
+<p><strong>NR · Survey reference [67]</strong></p>
+<p><strong>Paper:</strong> Omnidirectional image quality assessment based on adaptive multi-viewport fusion.</p>
+<ul>
+<li><strong>Input:</strong> Uniform spherical viewports</li>
+<li><strong>Modeling:</strong> Semantic-guided adaptive fusion</li>
+<li><strong>Publication:</strong> <a href="https://www.semanticscholar.org/search?q=Omnidirectional+image+quality+assessment+based+on+adaptive+multi-viewport+fusion">Title search</a></li>
+</ul>
+<p><a id="method-34"></a></p>
+<h3>Zhou et al. [68]</h3>
+<p><strong>NR · Survey reference [68]</strong></p>
+<p><strong>Paper:</strong> No-reference quality assessment for 360-degree images by analysis of multifrequency information and local-global naturalness.</p>
+<ul>
+<li><strong>Input:</strong> Equatorial viewports and ERP</li>
+<li><strong>Modeling:</strong> Local/global naturalness plus frequency features</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tcsvt.2021.3081182">Paper</a></li>
+</ul>
+<p><a id="method-35"></a></p>
+<h3>Liu et al. [69]</h3>
+<p><strong>NR · Survey reference [69]</strong></p>
+<p><strong>Paper:</strong> Blind omnidirectional image quality assessment with representative features and viewport oriented statistical features.</p>
+<ul>
+<li><strong>Input:</strong> Sampled viewports</li>
+<li><strong>Modeling:</strong> Local natural scene statistics, local binary pattern structure, and cross-channel color features with SVR</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1016/j.jvcir.2023.103770">Paper</a></li>
+</ul>
+<p><a id="method-36"></a></p>
+<h3>S²</h3>
+<p><strong>NR · Survey reference [70]</strong></p>
+<p><strong>Paper:</strong> Blind Omnidirectional Image Quality Assessment: Integrating Local Statistics and Global Semantics.</p>
+<ul>
+<li><strong>Input:</strong> Non-uniform viewports plus global ERP</li>
+<li><strong>Modeling:</strong> Pyramid-based local statistics and global VGG-M semantic features with weighted score fusion</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/icip49359.2023.10222049">Paper</a></li>
+</ul>
+<p><a id="method-37"></a></p>
+<h3>OIQAND</h3>
+<p><strong>NR · Survey reference [6]</strong></p>
+<p><strong>Paper:</strong> Subjective and objective quality assessment of non-uniformly distorted omnidirectional images.</p>
+<ul>
+<li><strong>Input:</strong> Equatorial viewports</li>
+<li><strong>Modeling:</strong> Multi-scale feature fusion and distortion-adaptive perception</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tmm.2025.3535372">Paper</a></li>
+</ul>
+<p><strong>Author implementation:</strong> <a href="https://github.com/RJL2000/OIQAND">GitHub</a></p>
+<p><strong>Weights:</strong> <a href="https://pan.baidu.com/s/1KeY07G6j5yoWtyREstB7kA?pwd=jufe">Baidu Netdisk</a> · Access code: <code>jufe</code></p>
+<p><a id="method-38"></a></p>
+<h3>MTAOIQA</h3>
+<p><strong>NR · Survey reference [72]</strong></p>
+<p><strong>Paper:</strong> Multitask auxiliary network for perceptual quality assessment of non-uniformly distorted omnidirectional images.</p>
+<ul>
+<li><strong>Input:</strong> Equatorial viewports</li>
+<li><strong>Modeling:</strong> Auxiliary multitask feature selection</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tcsvt.2024.3497994">Paper</a></li>
+</ul>
+<p><strong>Author implementation:</strong> <a href="https://github.com/RJL2000/MTAOIQA">GitHub</a></p>
+<p><a id="method-39"></a></p>
+<h3>IQCaption360</h3>
+<p><strong>NR · Survey reference [12]</strong></p>
+<p><strong>Paper:</strong> Omnidirectional image quality captioning: A large-scale database and a new model.</p>
+<ul>
+<li><strong>Input:</strong> Equatorial viewports and ERP</li>
+<li><strong>Modeling:</strong> Distortion distribution prediction and quality prediction, converted into quality captions through a textual template</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tip.2025.3539468">Paper</a></li>
+</ul>
+<p><strong>Author implementation:</strong> <a href="https://github.com/WenJuing/IQCaption360">GitHub</a></p>
+<p><strong>Weights:</strong> <a href="https://drive.google.com/file/d/1UukN1kKtPkO-2a4ITn3-_d4KD8Dp81oM/view?usp=sharing">Google Drive</a> · OIQ-10K model weights</p>
+<p><a id="category-7"></a></p>
+<h2>OIQA Methods with Saliency-based Viewport Sampling</h2>
+<p><a id="method-41"></a></p>
+<h3>VGCN</h3>
+<p><strong>NR · Survey reference [24]</strong></p>
+<p><strong>Paper:</strong> Blind omnidirectional image quality assessment with viewport oriented graph convolutional networks.</p>
+<ul>
+<li><strong>Input:</strong> Saliency-selected viewports</li>
+<li><strong>Modeling:</strong> Viewport graph convolution with fusion of local quality and global OI quality</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tcsvt.2020.3015186">Paper</a></li>
+</ul>
+<p><strong>Author implementation:</strong> <a href="https://github.com/weizhou-geek/VGCN-PyTorch">GitHub</a></p>
+<p><a id="method-42"></a></p>
+<h3>AHGCN</h3>
+<p><strong>NR · Survey reference [73]</strong></p>
+<p><strong>Paper:</strong> Adaptive hypergraph convolutional network for no-reference 360-degree image quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> Saliency-selected viewports</li>
+<li><strong>Modeling:</strong> Hierarchical hypergraph convolution</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1145/3503161.3548337">Paper</a></li>
+</ul>
+<p><strong>Author implementation:</strong> <a href="https://github.com/JunFu1995/AHGCN">GitHub</a></p>
+<p>The repository README describes the released implementation as the CVIQD version; its OIQA version remains on the project to-do list.</p>
+<p><a id="method-43"></a></p>
+<h3>Nandhini et al. [74]</h3>
+<p><strong>NR · Survey reference [74]</strong></p>
+<p><strong>Paper:</strong> Attention enabled viewport selection with graph convolution for omnidirectional visual quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> Attention-selected viewports</li>
+<li><strong>Modeling:</strong> Spatial dependency modeling with graph convolution</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1007/s11042-024-19457-5">Paper</a></li>
+</ul>
+<p><a id="method-44"></a></p>
+<h3>ST360IQ</h3>
+<p><strong>NR · Survey reference [75]</strong></p>
+<p><strong>Paper:</strong> ST360IQ: No-Reference omnidirectional image quality assessment with spherical vision transformers.</p>
+<ul>
+<li><strong>Input:</strong> Saliency-selected tangent viewports</li>
+<li><strong>Modeling:</strong> Spherical vision Transformer</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/icassp49357.2023.10096750">Paper</a></li>
+</ul>
+<p><strong>Author implementation:</strong> <a href="https://github.com/Nafiseh-Tofighi/ST360IQ">GitHub</a></p>
+<p><a id="category-8"></a></p>
+<h2>OIQA Methods with Human Viewing Behavior Modeling</h2>
+<p><a id="method-40"></a></p>
+<h3>Fang22</h3>
+<p><strong>NR · Survey reference [11]</strong></p>
+<p><strong>Paper:</strong> Perceptual quality assessment of omnidirectional images.</p>
+<ul>
+<li><strong>Input:</strong> Viewports with viewing priors</li>
+<li><strong>Modeling:</strong> Starting point and exploration-time modeling</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1609/aaai.v36i1.19937">Paper</a></li>
+</ul>
+<p><a href="https://arxiv.org/pdf/2207.02674">Additional reading link</a></p>
+<p><a id="method-45"></a></p>
+<h3>Sui et al. [76]</h3>
+<p><strong>NR · Survey reference [76]</strong></p>
+<p><strong>Paper:</strong> Perceptual quality assessment of omnidirectional images as moving camera videos.</p>
+<ul>
+<li><strong>Input:</strong> Scanpath-derived video frames</li>
+<li><strong>Modeling:</strong> Temporal pooling of 2D-IQA scores</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tvcg.2021.3050888">Paper</a></li>
+</ul>
+<p><a id="method-46"></a></p>
+<h3>Liu et al. [13]</h3>
+<p><strong>NR · Survey reference [13]</strong></p>
+<p><strong>Paper:</strong> Perceptual quality assessment of omnidirectional images: A benchmark and computational model.</p>
+<ul>
+<li><strong>Input:</strong> Conditioned viewport sequences</li>
+<li><strong>Modeling:</strong> Transformer for long-range viewport dependencies</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1145/3640344">Paper</a></li>
+</ul>
+<p><a id="method-47"></a></p>
+<h3>Max360IQ</h3>
+<p><strong>NR · Survey reference [77]</strong></p>
+<p><strong>Paper:</strong> Max360IQ: Blind omnidirectional image quality assessment with multi-axis attention.</p>
+<ul>
+<li><strong>Input:</strong> Recorded scanpath viewports</li>
+<li><strong>Modeling:</strong> Multi-axis attention and GRU</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1016/j.patcog.2025.111429">Paper</a></li>
+</ul>
+<p><strong>Author implementation:</strong> <a href="https://github.com/WenJuing/Max360IQ">GitHub</a></p>
+<p><strong>Weights:</strong> <a href="https://drive.google.com/drive/folders/18vCXea59S9JMYSaXBAe82mxa-_6i7FFJ">Google Drive</a> · Pretrained weights provided by the authors</p>
+<p><a id="method-48"></a></p>
+<h3>Zhang et al. [78]</h3>
+<p><strong>NR · Survey reference [78]</strong></p>
+<p><strong>Paper:</strong> No-reference omnidirectional image quality assessment based on joint network.</p>
+<ul>
+<li><strong>Input:</strong> Pseudo-browsing viewport sequences</li>
+<li><strong>Modeling:</strong> CNN-based local quality and viewport importance, with recurrent modeling of inter-viewport dependencies</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1145/3503161.3548175">Paper</a></li>
+</ul>
+<p><a id="method-49"></a></p>
+<h3>Zhang et al. [79]</h3>
+<p><strong>NR · Survey reference [79]</strong></p>
+<p><strong>Paper:</strong> Omnidirectional image quality assessment via multi-perceptual feature fusion.</p>
+<ul>
+<li><strong>Input:</strong> Pseudo-temporal viewport sequences</li>
+<li><strong>Modeling:</strong> Multi-perceptual feature fusion</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1016/j.displa.2025.103302">Paper</a></li>
+</ul>
+<p><a id="method-50"></a></p>
+<h3>Sendjasni et al. [80]</h3>
+<p><strong>NR · Survey reference [80]</strong></p>
+<p><strong>Paper:</strong> Perceptually-weighted CNN for 360-degree image quality assessment using visual scan-path and JND.</p>
+<ul>
+<li><strong>Input:</strong> Predicted scanpath viewports</li>
+<li><strong>Modeling:</strong> CNN-based viewport scores weighted by fixation order, duration, and just-noticeable difference (JND) maps</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/icip42928.2021.9506044">Paper</a></li>
+</ul>
+<p><a id="method-51"></a></p>
+<h3>PW-360IQA</h3>
+<p><strong>NR · Survey reference [82]</strong></p>
+<p><strong>Paper:</strong> PW-360IQA: Perceptually-Weighted Multichannel CNN for blind 360-degree image quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> Perceptual scanpath viewports</li>
+<li><strong>Modeling:</strong> Weight sharing and agreement-based pooling</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.3390/s23094242">Paper</a></li>
+</ul>
+<p><a href="https://www.mdpi.com/1424-8220/23/9/4242/pdf?version=1682391025">Additional reading link</a></p>
+<p><a id="method-52"></a></p>
+<h3>Wang et al. [83]</h3>
+<p><strong>NR · Survey reference [83]</strong></p>
+<p><strong>Paper:</strong> Dynamically attentive viewport sequence for no-reference quality assessment of omnidirectional images.</p>
+<ul>
+<li><strong>Input:</strong> Predicted scanpath viewports</li>
+<li><strong>Modeling:</strong> Gravitational scanpath and statistical features</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.3389/fnins.2022.1022041">Paper</a></li>
+</ul>
+<p><a href="https://www.frontiersin.org/articles/10.3389/fnins.2022.1022041/pdf">Additional reading link</a></p>
+<p><a id="method-53"></a></p>
+<h3>ESPOIQA</h3>
+<p><strong>NR · Survey reference [84]</strong></p>
+<p><strong>Paper:</strong> Eye scanpath prediction-based no-reference quality assessment of omnidirectional images.</p>
+<ul>
+<li><strong>Input:</strong> Fixation-density viewports</li>
+<li><strong>Modeling:</strong> Heatmap and multi-source feature fusion</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tim.2024.3470239">Paper</a></li>
+</ul>
+<p><a id="method-54"></a></p>
+<h3>GSR</h3>
+<p><strong>NR · Survey reference [85]</strong></p>
+<p><strong>Paper:</strong> Perceptual quality assessment of 360° images based on generative scanpath representation.</p>
+<ul>
+<li><strong>Input:</strong> Gaze-centered tangent patches</li>
+<li><strong>Modeling:</strong> ScanDMM-generated scanpaths with X-CLIP</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/TIP.2025.3583181">Paper</a></li>
+</ul>
+<p><a href="https://arxiv.org/abs/2309.03472">Additional reading link</a></p>
+<p><strong>Author implementation:</strong> <a href="https://github.com/xiangjieSui/GSR">GitHub</a></p>
+<p><strong>Weights:</strong> <a href="https://drive.google.com/drive/folders/1djA83UB5bcf-ue5YvW6CUa5e9A_-KE20?usp=drive_link">Google Drive</a> · GSR pretrained models</p>
+<p><a id="method-55"></a></p>
+<h3>Wang et al. [18]</h3>
+<p><strong>NR · Survey reference [18]</strong></p>
+<p><strong>Paper:</strong> Panoramic image quality assessment based on scanpath prediction and bidimensional feature representation.</p>
+<ul>
+<li><strong>Input:</strong> Scanpath viewports</li>
+<li><strong>Modeling:</strong> Minimum entropy difference for fixation prediction, followed by large-kernel local and self-attention global quality modeling</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tim.2025.3571161">Paper</a></li>
+</ul>
+<p><a id="method-56"></a></p>
+<h3>Li et al. [87]</h3>
+<p><strong>NR · Survey reference [87]</strong></p>
+<p><strong>Paper:</strong> Multi-observer scanpaths for omnidirectional image quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> Viewport graph random walks</li>
+<li><strong>Modeling:</strong> Ensemble prediction over multiple observers</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/icsip65915.2025.11171466">Paper</a></li>
+</ul>
+<p><a id="method-57"></a></p>
+<h3>RL-ScanIQA</h3>
+<p><strong>NR · Survey reference [88]</strong></p>
+<p><strong>Paper:</strong> RL-ScanIQA: Reinforcement-learned scanpaths for blind 360° image quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> Reinforcement-learned scanpaths</li>
+<li><strong>Modeling:</strong> Proximal policy optimization for viewport exploration, with an attention-based assessor fusing scanpath features and global ERP features</li>
+<li><strong>Publication:</strong> <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Wang_RL-ScanIQA_Reinforcement-Learned_Scanpaths_for_Blind_360deg_Image_Quality_Assessment_CVPR_2026_paper.html">Paper</a></li>
+</ul>
+<p><strong>Author reference implementation:</strong> <a href="https://github.com/wangyuji1/RLScanIQA">GitHub</a></p>
+<p>The authors provide a reference training implementation without pretrained checkpoints. Reproducing the paper also requires the corresponding data preprocessing and split configurations.</p>
+<p><a id="method-58"></a></p>
+<h3>Assessor360</h3>
+<p><strong>NR · Survey reference [26]</strong></p>
+<p><strong>Paper:</strong> Assessor360: Multi-sequence network for blind omnidirectional image quality assessment.</p>
+<ul>
+<li><strong>Input:</strong> Pseudo-viewport sequences</li>
+<li><strong>Modeling:</strong> Recursive probability sampling, multiscale feature aggregation, and temporal modeling of pseudo-viewport sequences</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.48550/arxiv.2305.10983">Paper</a></li>
+</ul>
+<p><a href="https://arxiv.org/pdf/2305.10983">Additional reading link</a></p>
+<p><strong>Author implementation:</strong> <a href="https://github.com/TianheWu/Assessor360">GitHub</a></p>
+<p><strong>Weights:</strong> <a href="https://github.com/TianheWu/Assessor360/releases/tag/Assessor360_v1">GitHub Releases</a> · Checkpoints for four datasets</p>
+<p><a id="category-9"></a></p>
+<h2>Supporting Components</h2>
+<p><a id="method-59"></a></p>
+<h3>ScanDMM</h3>
+<p><strong>Component · Survey reference [25]</strong></p>
+<p><strong>Paper:</strong> ScanDMM: A deep Markov model of scanpath prediction for 360° images.</p>
+<ul>
+<li><strong>Input:</strong> 360-degree scanpaths</li>
+<li><strong>Modeling:</strong> Deep Markov scanpath prediction</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/cvpr52729.2023.00675">Paper</a></li>
+</ul>
+<p><strong>Author implementation:</strong> <a href="https://github.com/xiangjieSui/ScanDMM">GitHub</a></p>
+<p>A scanpath prediction component, rather than a standalone OIQA quality predictor.</p>
+<p><a id="method-60"></a></p>
+<h3>Sun et al. [81]</h3>
+<p><strong>Component · Survey reference [81]</strong></p>
+<p><strong>Paper:</strong> Visual scanpath prediction using IOR-ROI recurrent mixture density network.</p>
+<ul>
+<li><strong>Input:</strong> Scanpaths</li>
+<li><strong>Modeling:</strong> Inhibition-of-return scanpath prediction</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1109/tpami.2019.2956930">Paper</a></li>
+</ul>
+<p>A scanpath prediction component, rather than a standalone OIQA quality predictor.</p>
+<p><a id="method-61"></a></p>
+<h3>X-CLIP</h3>
+<p><strong>Component · Survey reference [86]</strong></p>
+<p><strong>Paper:</strong> X-CLIP: End-to-End multi-grained contrastive learning for video-text retrieval.</p>
+<ul>
+<li><strong>Input:</strong> Video-text tokens</li>
+<li><strong>Modeling:</strong> Multi-grained contrastive learning</li>
+<li><strong>Publication:</strong> <a href="https://doi.org/10.1145/3503161.3547910">Paper</a></li>
+</ul>
+<p><strong>Implementation of the cited paper:</strong> <a href="https://github.com/xuguohai/X-CLIP">GitHub</a></p>
+<p>Reference [86] is the ACM MM 2022 X-CLIP paper on video-text retrieval. The GSR repository uses a Kinetics checkpoint; check the specific X-CLIP variant required by its implementation.</p>
+</article><script>document.querySelector('#theme').onclick=()=>{const dark=document.documentElement.classList.toggle('dark');document.querySelector('#theme').textContent=dark?'Light mode':'Dark mode'};</script></body></html>
