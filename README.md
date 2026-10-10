@@ -343,7 +343,7 @@ Survey repository: [KangchengWu/IEEE-OIQA-Survey](https://github.com/KangchengWu
            Challenges, Status, and Future Work},
   author = {Wu, Kangcheng and Yan, Jiebin and Zhu, Hanwei
             and Hou, Jingwen and Fang, Yuming},
-  howpublished = {Survey manuscript},
+  journal = {IEEE Open Journal of Immersive Display},
   url = {https://github.com/KangchengWu/IEEE-OIQA-Survey}
 }
 ```
