@@ -105,7 +105,7 @@ The following groups use the task names in **Table 2** of the survey. Years and 
 
 | Dataset · year | Scale¹ | Research focus | Access | Resources |
 | :--- | ---: | :--- | :--- | :--- |
-| **[OIQ-10K+](docs/datasets.md#dataset-15)** · 2025 | 2500 / 7500 | Images and quality descriptions | Request from authors | [Request details](https://link.springer.com/article/10.1007/s11263-025-02626-w) · [Paper](https://doi.org/10.1007/s11263-025-02626-w) |
+| **[OIQ-10K+](docs/datasets.md#dataset-15)** · 2025 | / 10000 | Images and quality descriptions | Request from authors | [Request details](https://link.springer.com/article/10.1007/s11263-025-02626-w) · [Paper](https://doi.org/10.1007/s11263-025-02626-w) |
 | **[JUFE-10K+](docs/datasets.md#dataset-16)** · 2025 | 430 / 10320 | Multimodal quality modeling | Request from authors | [Request details](https://link.springer.com/article/10.1007/s11263-025-02626-w) · [Paper](https://doi.org/10.1007/s11263-025-02626-w) |
 | **[AIGCOIQA2024](docs/datasets.md#dataset-17)** · 2024 | - / 300 | AI-generated OIs and text correspondence | Author release | [Download](https://terabox.com/s/17YIkFc-PFeviUbtGP1ReYQ) · [Project](https://github.com/IntMeGroup/AIGCOIQA) · [Paper](https://doi.org/10.1109/icip51287.2024.10647885) |
 | **[OHF2024](docs/datasets.md#dataset-18)** · 2025 | - / 600 | AIGC and distortion-aware saliency | Project page | [Project](https://github.com/ylylyl-sjtu/BLIP2OIQA-BLIP2OISal) · [Paper](https://doi.org/10.1109/tcsvt.2025.3616234) |
